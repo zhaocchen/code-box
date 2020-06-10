@@ -3,7 +3,7 @@
 类别(算法,数据库,shell)
 难度(a简单, b中等, c困难)
 
-代码快速访问 https://github.com/daaasheng/dash/tree/master/leetcode/level1/leet1.js
+代码快速访问 https://github.com/daaasheng/leetcode/tree/master/level1/leet1.js
 
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
@@ -153,7 +153,7 @@ https://www.geeksforgeeks.org/data-structures/linked-list/
 
 https://www.geeksforgeeks.org/linked-list-in-java/
 
-代码快速访问 https://github.com/daaasheng/dash/tree/master/leetcode/linkedList/leet1.js
+代码快速访问 https://github.com/daaasheng/leetcode/tree/master/linkedList/leet1.js
 
 | #    |              题目              | 语言 | 难度 |                          注释                          |
 | :--- | :----------------------------: | :--: | :--: | :----------------------------------------------------: |
@@ -239,7 +239,7 @@ Traversals遍历二叉树(先序遍历, 中序遍历, 后序遍历, 深度优先
 
 #### 内置方法
 
-代码快速访问 https://github.com/daaasheng/dash/tree/master/leetcode/mmdd.js
+代码快速访问 https://github.com/daaasheng/leetcode/tree/master/mmdd.js
 
 | #    | 题目     | 语言 | 难度 | 注释        |
 | ---- | -------- | ---- | ---- | ----------- |
