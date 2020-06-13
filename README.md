@@ -3,7 +3,7 @@
 类别(算法,数据库,shell)
 难度(a简单, b中等, c困难)
 
-代码快速访问 https://github.com/daaasheng/leetcode/tree/master/level1/leet1.js
+代码快速访问 https://github.com/daaasheng/leetcode/blob/master/level1/leet7.js
 
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
@@ -37,6 +37,7 @@
 |151| 翻转字符串里的单词 | js | b | Array.reverse |
 |819| 最常见的单词 | js | a | Map |
 |8| 字符串转换整数 (atoi) | js | b | 判断细节处理 |
+|349| 两个数组的交集 | js | a | set |
 
 #### 查找(搜索)
 
@@ -85,7 +86,7 @@
 
 
 
-#### 动态规划
+#### 动态规划 DynamicProgramming
 
 核心思想：
 
@@ -101,7 +102,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 |509|斐波那契数(数列)|py2/md/js|a|动态规划|
 |1137（147周赛）|第 N 个泰波那契数|py2|a|迭代|
 |62|不同路径|py2|b|动态规划|
-|70| 爬楼梯 |py2|a|动态规划|
+|70| 爬楼梯 |js/py2|a|动态规划|
 |746| 使用最小花费爬楼梯 |py2|a|动态规划|
 |198| 打家劫舍 |py2|a|动态规划|
 |740| 删除与获得点数(打家劫舍) |py2|b|动态规划|
@@ -109,8 +110,8 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 |152| 乘积最大子序列 |py2|b|动态规划|
 |322| 零钱兑换 |py2|b|动态规划|
 |377| 组合总和IV |py2|b|动态规划|
-|887| 扔鸡蛋（谷歌） |js|c|动态规划|
-|552| 学生出勤记录II | -- | c | 组合问题-动态规划 |
+|887| 扔鸡蛋（谷歌）? |js|c|动态规划|
+|552| 学生出勤记录II ?| -- | c | 组合问题-动态规划 |
 
 #### 贪心
 
@@ -153,7 +154,7 @@ https://www.geeksforgeeks.org/data-structures/linked-list/
 
 https://www.geeksforgeeks.org/linked-list-in-java/
 
-代码快速访问 https://github.com/daaasheng/leetcode/tree/master/linkedList/leet1.js
+代码快速访问 https://github.com/daaasheng/leetcode/blob/master/linkedList/leet2.js
 
 | #    |              题目              | 语言 | 难度 |                          注释                          |
 | :--- | :----------------------------: | :--: | :--: | :----------------------------------------------------: |
@@ -238,8 +239,6 @@ Traversals遍历二叉树(先序遍历, 中序遍历, 后序遍历, 深度优先
 ### 其他
 
 #### 内置方法
-
-代码快速访问 https://github.com/daaasheng/leetcode/tree/master/mmdd.js
 
 | #    | 题目     | 语言 | 难度 | 注释        |
 | ---- | -------- | ---- | ---- | ----------- |
