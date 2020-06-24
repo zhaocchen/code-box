@@ -13,7 +13,7 @@ var isHappy = function(n) {
     let sum = n
     let nums;
     let record = [];
-    while (!record.includes(sum) && sum !== 1 ) {
+    while (sum !== 1 && !record.includes(sum)) {
         nums = [...String(sum)];
         record.push(sum)
         sum = 0;
