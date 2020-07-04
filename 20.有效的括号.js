@@ -16,11 +16,17 @@ var isValid = function(s) {
         ['}', '{'],
         [']', '[']
     ]);
+    var lefts = [...bracket.values()];
     let stack = [];
     for (let curChar of [...s]) {
         let lastItem = stack.slice(-1)[0];
         if (!lastItem || lastItem !== bracket.get(curChar)) {
-            stack.push(curChar);
+            // 优化
+            if (lefts.includes(curChar)) {
+                stack.push(curChar);
+            } else {
+                return false;
+            }
         } else {
             stack.pop();
         }
