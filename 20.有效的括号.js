@@ -21,12 +21,11 @@ var isValid = function(s) {
     for (let curChar of [...s]) {
         let lastItem = stack.slice(-1)[0];
         if (!lastItem || lastItem !== bracket.get(curChar)) {
-            // 优化
-            if (lefts.includes(curChar)) {
-                stack.push(curChar);
-            } else {
+            // 非法检查
+            if (!lefts.includes(curChar)) {
                 return false;
             }
+            stack.push(curChar);
         } else {
             stack.pop();
         }
