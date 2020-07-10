@@ -112,6 +112,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 |53| 最大子序列 |py2|a|动态规划|
 |152| 乘积最大子序列 |py2|b|动态规划|
 |322| 零钱兑换 |py2|b|动态规划|
+|343| 整数拆分 |js|b|dp[i] = Math.max(dp[i], j * (i - j), j * dp[i - j])|
 |377| 组合总和IV |py2|b|动态规划|
 |887| 扔鸡蛋（谷歌）? |js|c|动态规划|
 |552| 学生出勤记录II ?| -- | c | 组合问题-动态规划 |
