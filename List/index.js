@@ -11,7 +11,7 @@ function List () {
     this.clear = clear; // 清空列表中的所有元素
     this.includes = includes; // 是否包含元素
     this.front = front; // 从列表的当前位置移动到第一个位置
-    this.end = end; // 从列表的当前位置移动到最后一个位置
+    this.rear = rear; // 从列表的当前位置移动到最后一个位置
     this.next = next; // 当前位置前移一位
     this.currPos = currPos; // 返回列表当前位置
     this.moveTo = moveTo; // 将当前位置移动到指定位置
@@ -79,7 +79,7 @@ function front () {
     this.pos = 0;
 }
 
-function end () {
+function rear () {
     this.pos = this.size - 1;
 }
 
