@@ -20,6 +20,7 @@
 //     return res
 // };
 
+// 左右指针+第三个指针， 优势在于， 先固定数组长度， 按照索引对元素进行复制， 减少从0出添加元素导致所有元素向后移动一位
 var sortedSquares = function(A) {
     let start_index = 0
     let end_index = A.length - 1
