@@ -11,22 +11,20 @@
  */
 var lengthOfLongestSubstring = function(s) {
     var len = s.length
-    var start = 0
-    var maxSubstr = ''
-    while( start < len) {
-        var end = start
-        var curSubstr = ''
-        while (!curSubstr.includes(s[end]) && end < len) {
-            curSubstr += s[end]
+    var end = -1
+    var hashTable = new Set()
+    var res = 0
+    for (let i=0; i < len; i++) {
+        if (i != 0) {
+            hashTable.delete(s.charAt(i - 1))
+        }
+        while ((end + 1 < len) && !hashTable.has(s.charAt(end + 1))) {
+            hashTable.add(s.charAt(end + 1))
             end++
         }
-        if (curSubstr.length > maxSubstr.length) {
-            maxSubstr = curSubstr
-        }
-        start += 1
-        end = start
+        res = Math.max(res, end - i + 1)
     }
-    return maxSubstr.length
+    return res
 };
 
 // console.log(lengthOfLongestSubstring("abcabcbb"))
