@@ -1,7 +1,7 @@
 
 # 算法-排序:
 
-### 冒泡排序， Time: O(n^2), Space: O(1)
+### 冒泡排序-bubbleSort, Time: O(n^2), Space: O(1)
 
 ```
 arr
@@ -25,6 +25,21 @@ for (let i=0; i < arr.length; i++) {
 }
 ```
 
+### 选择排序-selection, Time: O(n^2), Space: O(1)
+
+```
+for (var i = 0; i < arr.length - 1; i++) {
+    indexMin = i;
+    for (var j = i; j < arr.length; j++) {
+        if (arr[indexMin] > arr[j]) {
+            indexMin = j;
+        }
+    }
+    if (i != indexMin) {
+        swap(arr, i, indexMin);
+    }
+}
+```
 
 ### 快速排序，O(nlogn)
 
