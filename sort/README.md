@@ -1,9 +1,32 @@
 
-# 算法
+# 算法-排序:
 
-排序:
+### 冒泡排序， Time: O(n^2), Space: O(1)
 
-快速排序，O(nlogn)
+```
+arr
+for (let i=0; i < arr.length; i++) {
+    for (let j=0; j < arr.length - i - 1; j++) {
+        if (arr[j] > arr[j+1]) {
+            [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
+        }
+    }
+}
+```
+降序
+```
+arr
+for (let i=0; i < arr.length; i++) {
+    for (let j=0; j < arr.length - i - 1; j++) {
+        if (arr[j] < arr[j+1]) {
+            [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
+        }
+    }
+}
+```
+
+
+### 快速排序，O(nlogn)
 
 特征：
  大量重复元素（三路排序）
