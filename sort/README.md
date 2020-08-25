@@ -1,7 +1,9 @@
 
 # 算法-排序:
 
-### 冒泡排序-bubbleSort, Time: O(n^2), Space: O(1)
+### 1. 冒泡排序-bubbleSort, Time: O(n^2), Space: O(1)
+
+冒泡排序，比较所有相邻的两项，若前大后小则交换。元素向上移动， 类似气泡上浮。
 
 ```
 arr
@@ -25,7 +27,9 @@ for (let i=0; i < arr.length; i++) {
 }
 ```
 
-### 选择排序-selection, Time: O(n^2), Space: O(1)
+### 2. 选择排序-selectionSort, Time: O(n^2), Space: O(1)
+
+选择排序，原址比较。第i次寻找第i小的元素， 并放置第i位。
 
 ```
 for (var i = 0; i < arr.length - 1; i++) {
@@ -38,6 +42,22 @@ for (var i = 0; i < arr.length - 1; i++) {
     if (i != indexMin) {
         swap(arr, i, indexMin);
     }
+}
+```
+
+### 3. 插入排序-insertionSort, Time: O(n^2), Space: O(1)
+
+每次排一个数组项。
+
+```
+for (var i = 0; i < arr.length; i++) {
+    var tmp = arr[i];
+    var j = i - 1;
+    while (j >= 0 && arr[j] > tmp) {
+        arr[j+1] = arr[j];
+        j--;
+    }
+    arr[j+1] = tmp;
 }
 ```
 
