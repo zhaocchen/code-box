@@ -6,6 +6,11 @@
 */
 
 function sort(arr, n) {
+    arr.sort((a, b) => Math.abs(a-n) - Math.abs(b-n));
+    return arr;
+}
+
+function sort2(arr, n) {
     arr.sort((a, b) => a - b);
     if (n < arr[0]) return arr;
     if (n > arr.slice(-1)[0]) return arr.slice().reverse();
@@ -42,4 +47,5 @@ function sort(arr, n) {
 } 
 
 console.log(sort([7, 28, -1, 0, 7, 33], 4))
+console.log(sort2([7, 28, -1, 0, 7, 33], 4))
 // console.log(sort([1,2,4,5], 3))
