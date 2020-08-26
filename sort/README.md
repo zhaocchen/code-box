@@ -61,6 +61,24 @@ for (var i = 0; i < arr.length; i++) {
 }
 ```
 
+### 4. *希尔排序-shellSort, Time: O(n^2), Space: O(1)
+
+插入排序的优化， 
+
+```
+for (var gap = Math.floor(n / 2); gap > 0; gap = Math.floor(gap / 2)) {
+    for (var i = gap; i < n; i++) {
+        var temp = arr[i];
+        let j = i;
+        while (j >= gap && arr[j-gap] > temp) {
+            arr[j] = arr[j-gap];
+            j -= gap;
+        }
+        arr[j] = temp;
+    }
+}
+```
+
 ### 快速排序，O(nlogn)
 
 特征：
