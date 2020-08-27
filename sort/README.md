@@ -63,7 +63,8 @@ for (var i = 0; i < arr.length; i++) {
 
 ### 4. *希尔排序-shellSort, Time: O(n^2), Space: O(1)
 
-插入排序的优化， 
+插入排序的优化， 又称“缩小增量排序”。
+把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；随着增量逐渐减少，每组包含的关键词越来越多，当增量减至 1 时，整个文件恰被分成一组，算法便终止。
 
 ```
 for (var gap = Math.floor(n / 2); gap > 0; gap = Math.floor(gap / 2)) {
@@ -79,7 +80,63 @@ for (var gap = Math.floor(n / 2); gap > 0; gap = Math.floor(gap / 2)) {
 }
 ```
 
-### 快速排序，O(nlogn)
+### 5. 归并排序-mergeSort，Time: O(nlog(n)), Space: O(n)
+
+分而治之， 切分成小数组（单元素）， 归并成大数组(双指针合并两个有序数组)。
+
+
+// 拆分数组
+```
+if (arr.length == 1) {
+    return arr;
+}
+var middle = Math.floor(arr.length / 2);
+var leftArr = arr.slice(0, middle);
+var rightArr = arr.slice(middle);
+
+leftArr = mergeSort(leftArr);
+rightArr = mergeSort(rightArr);
+
+return mergeArr(leftArr, rightArr);
+```
+
+// 辅助函数
+```
+  while (i < leftArr.length && j < rightArr.length) {
+    if (leftArr[i] > rightArr[j]) {
+      res.push(rightArr[j]);
+      j++;
+    } else {
+      res.push(leftArr[i]);
+      i++;
+    }
+  }
+
+  if (i == leftArr.length) {
+    res.push(...rightArr.slice(j));
+  }
+
+  if (j == leftArr.length) {
+    res.push(...leftArr.slice(i));
+  }
+
+  return res;
+```
+
+
+### 6. 快速排序-quicksort，Time: O(nlogn), Space: O(n)
+
+分而治之， 拆分成小数组。
+
+1. 选择主元
+2. 左指针找到比主元大的值， 右指针找到比主元小的值， 交换
+3. 左指针大于有指针时， 再次划分为更小数组， 重复2
+
+```
+
+```
+
+
 
 特征：
  大量重复元素（三路排序）
