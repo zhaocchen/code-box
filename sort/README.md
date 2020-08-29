@@ -206,11 +206,46 @@ for (let i = 0; i < counts.length; i++) {
 }
 ```
 
-### 9. 桶排序-bucketSort, 
+### 9. 桶排序-bucketSort, Time(avg): O(n+k), Time(worst): O(n^2), Space: O(n)
 
-### 10. 基数排序-radixSort, 
+也叫箱排序， 元素分为不同的桶， 再用排序算法， 最后合并。
 
+```
+let buckets = createBuckets(arr, 5);
+let res = [];
+for (let curBucket of buckets) {
+    let sortedBucket = insertionSort(curBucket);
+    res.push(...sortedBucket)
+}
+```
 
+辅助函数
+
+```
+function createBuckets(arr, size) {
+    let maxNum = Math.max(...arr);
+    let minNum = Math.min(...arr);
+    let bucketCount = Math.floor((maxNum - minNum) / size) + 1;
+    let buckets = Array.from({length: bucketCount}, () => []);
+    for (let i = 0; i < arr.length; i++) {
+        let curNum = arr[i];
+        let bucketIndex = Math.floor((curNum - minNum) / size);
+        buckets[bucketIndex].push(curNum);
+    }
+    return buckets;
+}
+```
+
+### 10. 基数排序-radixSort, Time: O(32/b * n), Space: O(n + 2^b)
+
+代码仓库： 
+
+参考：
+
+1. 《学习JavaScript数据结构与算法（第3版）》
+2. 《漫画算法-小灰的算法之旅》
+3. 十大经典排序算法(http://hawstein.com/2019/09/16/sorting-algorithms-episodes/)
+4. https://www.geeksforgeeks.org/merge-sort/?ref=lbp
 
 
 特征：
