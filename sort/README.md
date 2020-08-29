@@ -128,14 +128,37 @@ return mergeArr(leftArr, rightArr);
 
 分而治之， 拆分成小数组。
 
-1. 选择主元
-2. 左指针找到比主元大的值， 右指针找到比主元小的值， 交换
-3. 左指针大于有指针时， 再次划分为更小数组， 重复2
+- Always pick first element as pivot.
+- Always pick last element as pivot (implemented below)
+- Pick a random element as pivot.
+- Pick median as pivot.
 
 ```
-
+var pivot = arr[left];
+var i = start
+var j = end;
+while (i < j) {
+    while (i < j && arr[j] >= pivot) j--;
+    if (i<j) {
+        arr[i] = arr[j];
+        i++;
+    }
+    while (i < j && arr[i] < pivot) i++;
+    if (i<j) {
+        arr[j] = arr[i];
+        j--;
+    }
+}
+arr[i] = pivot;
 ```
 
+### 7. 计数排序-countingSort, Time: , Space: 
+
+### 8. 桶排序-bucketSort, 
+
+### 9. 基数排序-radixSort, 
+
+### 10. 堆排序-heapSort
 
 
 特征：
