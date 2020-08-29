@@ -187,7 +187,24 @@ function heapSort(arr) {
 
 /************ 分布式排序算法 ************/
 
-### 8. *计数排序-countingSort, Time: , Space: 
+### 8. *计数排序-countingSort, Time: O(n+k), Space: O(n+k)
+
+```
+let maxNum = Math.max(...arr);
+let counts = new Array(maxNum+1).fill(0)
+for (let i = 0; i < arr.length; i++) {
+    let curNum = arr[i];
+    counts[curNum]++;
+}
+let sortedIndex = 0;
+for (let i = 0; i < counts.length; i++) {
+    let curCount = counts[i];
+    while (curCount > 0) {
+        arr[sortedIndex++] = i;
+        curCount--;
+    }
+}
+```
 
 ### 9. 桶排序-bucketSort, 
 
