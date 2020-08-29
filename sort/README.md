@@ -236,7 +236,57 @@ function createBuckets(arr, size) {
 }
 ```
 
-### 10. 基数排序-radixSort, Time: O(32/b * n), Space: O(n + 2^b)
+### 10. *基数排序-radixSort, Time: O(32/b * n), Space: O(n + 2^b)
+
+适用场景：
+
+根据数字的有效位或基数分为不同的桶。 
+
+1. 第一趟， 按个位分桶， 再合并
+2. 第二趟， 按十位分桶， 再合并
+3. 第三趟， 按百位分桶， 再合并
+... 依次到结束
+
+```
+let maxNum = Math.max(...arr);
+let minNum = Math.min(...arr);
+let significantDigit = 1;
+while ((maxNum - minNum) / significantDigit >= 1) {
+    arr = countingSortForRadix(arr, radixBase, significantDigit, minNum);
+    significantDigit *= radixBase;
+}
+```
+
+辅助函数
+```
+function countingSortForRadix(arr, radixBase, significantDigit, minNum) {
+    let bucketsIndex;
+    let buckets = new Array(radixBase).fill(0);
+    let aux = [];
+    let getIndex = (curNum) => Math.floor((curNum - minNum) / significantDigit % radixBase);
+    for (let i = 0; i < arr.length; i++) {
+        bucketsIndex = getIndex(arr[i]);
+        buckets[bucketsIndex]++;
+    }
+
+    for (let i = 1; i < radixBase; i++) {
+        buckets[i] += buckets[i - 1]
+    }
+
+    for (let i = arr.length - 1; i >= 0; i--) {
+        bucketsIndex = getIndex(arr[i])
+        buckets[bucketsIndex]--;
+        aux[buckets[bucketsIndex]] = arr[i];
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = aux[i]
+    }
+
+    return arr;
+}
+```
+
 
 代码仓库： 
 
