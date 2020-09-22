@@ -190,31 +190,65 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 1. 元素个数无上限。
 2. 插入/删除元素， 无需创建空间， 无需移动插入位置以后的元素。
 
+```
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+```
+
 https://www.geeksforgeeks.org/data-structures/linked-list/
 
 https://www.geeksforgeeks.org/linked-list-in-java/
 
 代码快速访问 https://github.com/daaasheng/leetcode/blob/master/linkedList/leet2.js
 
-| #    |              题目              | 语言 |  难度  |                          注释                          |
-| :--- | :----------------------------: | :--: | :----: | :----------------------------------------------------: |
-| --   | ---------------链表----------- |  --  |   --   |                           --                           |
-| 1290 |        二进制链表转整数        |  js  |  Easy  |                        链表遍历                        |
-| 83   |    删除排序链表中的重复元素    |  js  |  Easy  |                  链表删除（方法二？）                  |
-| m2_1 |          移除重复节点          |  js  |  Easy  |                        快慢指针                        |
-| 876  |         链表的中间节点         |  js  |  Easy  |                        快慢指针                        |
-| m22  |      链表中倒数第k个节点       |  js  |  Easy  |                        快慢指针                        |
-| 203  |          移除链表元素          |  js  |  Easy  | 哨兵节点<br />与快慢指针的区别的是否需要删除第一个元素 |
-| m18  |         删除链表的节点         |  js  |  Easy  |                        哨兵节点                        |
-| 160  |            相交链表            |  js  |  Easy  |                快慢指针（创建相交链表）                |
-| 206  |            反转链表            |  js  |  Easy  |                        链表反转                        |
-| 234  |            回文链表            |  js  |  Easy  |                  回文数组/链表反转？                   |
-| 21   |        合并两个有序链表        |  js  |  Easy  |                    链表反转+双指针                     |
-| 237  |        删除链表中的节点        | py2  |  Easy  |                        链表删除                        |
-| 2    |           两数相加?            | py2  | Medium |                        链表合并                        |
-| 445  |          两数相加II?           | py2  | Medium |                                                        |
-| 355  |           设计推特?            |  js  | Medium |                     (应用)增删改查                     |
-| 141  |            环形链表            |  js  |  Easy  |                        快慢指针                        |
+| #                |           题目           | 语言 |  难度  |                          注释                          |
+| :--------------- | :----------------------: | :--: | :----: | :----------------------------------------------------: |
+| 206\剑指offer 24 |         反转链表         |  js  |  Easy  |                        链表反转                        |
+| 1290             |     二进制链表转整数     |  js  |  Easy  |                        链表遍历                        |
+| 83               | 删除排序链表中的重复元素 |  js  |  Easy  |                  链表删除（方法二？）                  |
+| m2_1             |       移除重复节点       |  js  |  Easy  |                        快慢指针                        |
+| 876              |      链表的中间节点      |  js  |  Easy  |                        快慢指针                        |
+| m22              |   链表中倒数第k个节点    |  js  |  Easy  |                        快慢指针                        |
+| 203              |       移除链表元素       |  js  |  Easy  | 哨兵节点<br />与快慢指针的区别的是否需要删除第一个元素 |
+| m18              |      删除链表的节点      |  js  |  Easy  |                        哨兵节点                        |
+| 160              |         相交链表         |  js  |  Easy  |                快慢指针（创建相交链表）                |
+| 234              |         回文链表         |  js  |  Easy  |                  回文数组/链表反转？                   |
+| 21               |     合并两个有序链表     |  js  |  Easy  |                    链表反转+双指针                     |
+| 237              |     删除链表中的节点     | py2  |  Easy  |                        链表删除                        |
+| 2                |        两数相加?         | py2  | Medium |                        链表合并                        |
+| 445              |       两数相加II?        | py2  | Medium |                                                        |
+| 355              |        设计推特?         |  js  | Medium |                     (应用)增删改查                     |
+| 141              |         环形链表         |  js  |  Easy  |                        快慢指针                        |
+
+反转链表
+
+```
+var reverseList = function(head) {
+    var prev = null
+    var cur = head
+    var next = null
+    while (cur != null) {
+        next = cur.next
+        cur.next = prev
+        prev = cur
+        cur = next
+    }
+    return prev
+};
+
+var reverseList = function(head) {
+    if (head == null || head.next == null) return head
+    var reverseedList = reverseList(head.next)
+    head.next.next = head
+    head.next = null
+    return reverseedList
+};
+```
 
 
 
