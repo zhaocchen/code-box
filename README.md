@@ -137,19 +137,18 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
-|--|||||
-|509|斐波那契数(数列)|py2/md/js|Easy|dp[i] = i < 2 ? i : dp[i - 1] + dp[i - 2]|
-|1137（147周赛）|第 N 个泰波那契数|py2|Easy|迭代|
-|62|不同路径|py2|Medium|动态规划|
+|509|斐波那契数(数列)|py2、js|Easy|dp[i] = i < 2 ? i : dp[i - 1] + dp[i - 2]|
+|1137（147周赛）|第 N 个泰波那契数|py2、js|Easy|dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]|
 |70（经典）| 爬楼梯 |py2、js|Easy|dp[i] = dp[i-1] + dp[i -2]|
 |746| 使用最小花费爬楼梯 |py2|Easy|动态规划|
 |198| 打家劫舍 |py2|Easy|动态规划|
 |740| 删除与获得点数(打家劫舍) |py2|Medium|动态规划|
-|53| 最大子序列 |py2|Easy|动态规划|
-|152| 乘积最大子序列 |py2|Medium|动态规划|
+|53（经典）<br />剑指offer42| 最大子序列 |py2、js|Easy|Dp[i] = Math.max(dp[i-1]+nums[i], num[i])|
+|152| 乘积最大子序列 |py2、js|Medium|Dp[i] = Math.max(dp[i-1]*nums[i], num[i])<br />由于负负得正需要一个最小子序列辅助|
 |322（经典）| 零钱兑换 |py2、js|Medium|dp[i] = Math.min(dp[i], dp[i-coin] + 1)|
 |343| 整数拆分 |js|Medium|dp[i] = Math.max(dp[i], j * (i - j), j * dp[i - j])|
 |377| 组合总和IV |py2|Medium|动态规划|
+|62| 不同路径 |py2|Medium|动态规划|
 |887| 扔鸡蛋（谷歌）? |js|Hard|动态规划|
 |552| 学生出勤记录II ?| -- | Hard | 组合问题-动态规划 |
 
