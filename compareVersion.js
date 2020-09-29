@@ -10,7 +10,7 @@
  * @param {string} version2
  * @return {number}
  */
-var compareVersion = function(version1, version2) {
+var compareVersion2 = function(version1, version2) {
     let testMap = new Map([
         ['alpha', 0],
         ['beta', 1],
@@ -27,6 +27,22 @@ var compareVersion = function(version1, version2) {
             if (a == undefined) return 1
             if (b == undefined) return -1
         }
+        if (a != b) {
+            return a > b ? 1 : -1
+        }
+    }
+    return 0
+};
+
+var compareVersion = function(version1, version2) {
+    const parseIntVersion = (v) => v.replace('alpha', 0).replace('beta', 1).replace('rc', 2).split(/\.|\-/).map(d => parseInt(d))
+    const v1 = parseIntVersion(version1)
+    const v2 = parseIntVersion(version2)
+    // console.log(v1, v2)
+    let n = Math.max(v1.length, v2.length)
+    for (let i = 0; i < n; i++) {
+        let a = v1[i] || 4
+        let b = v2[i] || 4
         if (a != b) {
             return a > b ? 1 : -1
         }
