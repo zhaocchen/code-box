@@ -17,6 +17,7 @@
 |1281|整数的各位积和之差|js|Easy|reduce|
 |1313|解压缩编码列表|js|Easy|new Array(len).fill(num)|
 |1431|拥有最多糖果的孩子|js|Easy|Math.max(num1, num2, ..)|
+|1470|重新排列数组|js|Easy|[].push(e1, e2)|
 |1480|一维数组的动态和|js|Easy|reduce|
 |1486|数组异或操作|js|Easy|Array.from({length: len}, (v, i) => i)|
 |1512|好数对的数目|js|Easy|for|
