@@ -15,6 +15,7 @@
 |412|Fizz Buzz|py2/js|Easy|Array.from|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
 |1281|整数的各位积和之差|js|Easy|reduce|
+|1313|解压缩编码列表|js|Easy|new Array(len).fill(num)|
 |1480|一维数组的动态和|js|Easy|reduce|
 |342|4的幂|py2|Easy|--|
 |66|加一|js\py2|Easy|操作list|
