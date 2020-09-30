@@ -18,6 +18,7 @@
 |1313|解压缩编码列表|js|Easy|new Array(len).fill(num)|
 |1431|拥有最多糖果的孩子|js|Easy|Math.max(num1, num2, ..)|
 |1480|一维数组的动态和|js|Easy|reduce|
+|1512|好数对的数目|js|Easy|for|
 |342|4的幂|py2|Easy|--|
 |66|加一|js\py2|Easy|操作list|
 |13|罗马数字转整数|py2|Easy|字典|
