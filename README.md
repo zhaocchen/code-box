@@ -15,6 +15,7 @@
 |412|Fizz Buzz|py2/js|Easy|Array.from|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
 |1281|整数的各位积和之差|js|Easy|reduce|
+|1295|统计位数为偶数的数字|js|Easy|数字转字符串 num+''|
 |1313|解压缩编码列表|js|Easy|new Array(len).fill(num)|
 |1342|将数字变成 0 的操作次数|js|Easy|while|
 |1389|按既定顺序创建目标数组|js|Easy|[].splice(start, deleteCount, n1, n2,..)|
