@@ -26,6 +26,7 @@
 |1480|一维数组的动态和|js|Easy|reduce|
 |1486|数组异或操作|js|Easy|Array.from({length: len}, (v, i) => i)|
 |1512|好数对的数目|js|Easy|for|
+|1572|矩阵对角线元素的和|js|Easy|+=|
 |342|4的幂|py2|Easy|--|
 |66|加一|js\py2|Easy|操作list|
 |13|罗马数字转整数|py2|Easy|字典|
