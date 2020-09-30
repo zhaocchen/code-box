@@ -14,6 +14,7 @@
 |9|回文数|js|Easy|整数反转|
 |412|Fizz Buzz|py2/js|Easy|Array.from|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
+|1480|一维数组的动态和|Js|Easy|Array|
 |342|4的幂|py2|Easy|--|
 |66|加一|js\py2|Easy|操作list|
 |13|罗马数字转整数|py2|Easy|字典|
