@@ -14,6 +14,7 @@
 |9|回文数|js|Easy|整数反转|
 |412|Fizz Buzz|py2/js|Easy|Array.from|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
+|628|三个数的最大乘积|js|Easy|*|
 |1266|访问所有点的最小时间|js|Easy|Math.abs(num)|
 |1281|整数的各位积和之差|js|Easy|reduce|
 |1295|统计位数为偶数的数字|js|Easy|数字转字符串 num+''|
