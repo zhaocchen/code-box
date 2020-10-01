@@ -16,6 +16,7 @@
 |66|加一|py2、js|Easy|操作list|
 |412|Fizz Buzz|py2、js|Easy|Array.from|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
+|371|两整数之和（经典位运算）|js|Easy|sum = a ^ b<br />carry = (a & b) << 1|
 |628|三个数的最大乘积|js|Easy|*|
 |836|矩形重叠|js|Easy|逆向思维|
 |1266|访问所有点的最小时间|js|Easy|Math.abs(num)|
@@ -31,7 +32,6 @@
 |1486|数组异或操作|js|Easy|Array.from({length: len}, (v, i) => i)|
 |1512|好数对的数目|js|Easy|for|
 |1572|矩阵对角线元素的和|js|Easy|+=|
-|371|两整数之和|py2|Easy|--|
 |67|二进制求和|py2|Easy|--|
 |415|字符串相加|py2|Easy|--|
 |1013|将数组分成和相等的三部分|js|Easy|for遍历数组|
