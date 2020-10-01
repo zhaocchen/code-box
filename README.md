@@ -12,7 +12,7 @@
 |168/171|Excel表序号|js|Easy|26进制|
 |7|整数反转|Py2、js|Easy|取余、取整|
 |9|回文数|js|Easy|整数反转|
-|412|Fizz Buzz|py2/js|Easy|Array.from|
+|412|Fizz Buzz|py2、js|Easy|Array.from|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
 |628|三个数的最大乘积|js|Easy|*|
 |836|矩形重叠|js|Easy|逆向思维|
@@ -29,8 +29,7 @@
 |1486|数组异或操作|js|Easy|Array.from({length: len}, (v, i) => i)|
 |1512|好数对的数目|js|Easy|for|
 |1572|矩阵对角线元素的和|js|Easy|+=|
-|342|4的幂|py2|Easy|--|
-|66|加一|js\py2|Easy|操作list|
+|66|加一|py2、js|Easy|操作list|
 |13|罗马数字转整数|py2|Easy|字典|
 |371|两整数之和|py2|Easy|--|
 |67|二进制求和|py2|Easy|--|
@@ -376,6 +375,7 @@ Traversals遍历二叉树(先序遍历, 中序遍历, 后序遍历, 深度优先
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
 |204|计数质数|js|easy|-|
+|342|4的幂|py2|Easy|检查一个数是否为 2 的幂：x > 0 and (x & (x - 1)) == 0<br />若 xx 为 2 的幂且 x%3 == 1，则 xx 为 4 的幂|
 |m57_2|和为s的连续正数序列|js|a|连续数字求和公式|
 |1603| 交点 |js|Hard|？|
 
