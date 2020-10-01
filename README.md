@@ -14,13 +14,14 @@
 |9|回文数|js|Easy|整数反转|
 |13|罗马数字转整数|py2、js|Easy|Map|
 |66|加一|py2、js|Easy|操作list|
-|67|二进制求和|py2|Easy|while|
+|67|二进制求和|py2|Easy|按位+|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
 |371|两整数之和（经典位运算）|js|Easy|sum = a ^ b<br />carry = (a & b) << 1|
 |412|Fizz Buzz|py2、js|Easy|Array.from|
-|415|字符串相加|js|Easy|while|
+|415|字符串相加|js|Easy|按位+|
 |628|三个数的最大乘积|js|Easy|*|
 |836|矩形重叠|js|Easy|逆向思维|
+|989|数组形式的整数加法|js|Easy|按位+|
 |1266|访问所有点的最小时间|js|Easy|Math.abs(num)|
 |1281|整数的各位积和之差|js|Easy|reduce|
 |1295|统计位数为偶数的数字|js|Easy|数字转字符串 num+''|
@@ -36,7 +37,6 @@
 |1572|矩阵对角线元素的和|js|Easy|+=|
 |1013|将数组分成和相等的三部分|js|Easy|for遍历数组|
 |43|字符串相乘|py2|Medium|--|
-|989|数组形式的整数加法|py2|Easy|--|
 |69|x的平方根|py2|Easy|牛顿迭代法|
 |507|完美数|py2|Easy|欧几里得-欧拉定理|
 |119|杨辉三角|py2|Easy|迭代|
