@@ -12,6 +12,8 @@
 |168/171|Excel表序号|js|Easy|26进制|
 |7|整数反转|Py2、js|Easy|取余、取整|
 |9|回文数|js|Easy|整数反转|
+|13|罗马数字转整数|py2、js|Easy|Map|
+|66|加一|py2、js|Easy|操作list|
 |412|Fizz Buzz|py2、js|Easy|Array.from|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
 |628|三个数的最大乘积|js|Easy|*|
@@ -29,8 +31,6 @@
 |1486|数组异或操作|js|Easy|Array.from({length: len}, (v, i) => i)|
 |1512|好数对的数目|js|Easy|for|
 |1572|矩阵对角线元素的和|js|Easy|+=|
-|66|加一|py2、js|Easy|操作list|
-|13|罗马数字转整数|py2|Easy|字典|
 |371|两整数之和|py2|Easy|--|
 |67|二进制求和|py2|Easy|--|
 |415|字符串相加|py2|Easy|--|
@@ -58,7 +58,6 @@
 |349| 两个数组的交集 | js | Easy | set |
 |299| 猜数字游戏 | js | Easy | 遍历字符串和数组 |
 |165| 比较版本号<br />前端通用的版本比较 | Js | Medium | -- |
-|[20]| 有效的括号 | js | Easy | 栈 |
 
 #### 查找(搜索)
 
@@ -190,6 +189,12 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 #### 分支
 
 ### 其他数据结构
+
+#### 栈
+
+| #    | 题目       | 语言 | 难度 | 注释 |
+| ---- | ---------- | ---- | ---- | ---- |
+| 20   | 有效的括号 | js   | Easy | 栈   |
 
 #### 链表
 
