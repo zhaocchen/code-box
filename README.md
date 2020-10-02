@@ -18,6 +18,7 @@
 |69|x的平方根|py2|Easy|牛顿迭代法<br />res = (res + x / res) / 2|
 |119|杨辉三角|py2、js|Easy|迭代|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
+|217|存在重复元素|py2、js|Easy|查重new Set([]).size|
 |371|两整数之和（经典位运算）|js|Easy|sum = a ^ b<br />carry = (a & b) << 1|
 |412|Fizz Buzz|py2、js|Easy|Array.from|
 |415|字符串相加|js|Easy|按位+|
@@ -43,7 +44,6 @@
 |54|旋转矩阵|py2\题解|Medium|操作数组|
 |56|合并区间|py2|Medium|排序+迭代|
 |57|插入区间|py2|Hard|排序+迭代|
-|217|存在重复元素|py2|Easy|查重|
 |+401|二进制手表|py2|Easy|--未完成--|
 |70|矩阵置零|py2|Medium|遍历|
 |1094（142周赛）| 拼车 |py2|Medium|乘车问题|
