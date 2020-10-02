@@ -23,6 +23,7 @@
 |412|Fizz Buzz|py2、js|Easy|Array.from|
 |415|字符串相加|js|Easy|按位+|
 |628|三个数的最大乘积|js|Easy|*|
+|771|宝石与石头|js|Easy|indexOf|
 |836|矩形重叠|js|Easy|逆向思维|
 |989|数组形式的整数加法|js|Easy|按位+|
 |1266|访问所有点的最小时间|js|Easy|Math.abs(num)|
