@@ -175,17 +175,67 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 #### 回溯算法Mediumacktracking
 
+多叉树的深度优先遍历问题
+
+var arr =[[‘A’,’B’],[‘a’,’b’],[1,2]] 求二维数组的全排列组合  结果：Aa1,Aa2,Ab1,Ab2,Ba1,Ba2,Bb1,Bb2
+
+```
+    function dfs(arr, dep, solution, res) {
+        // console.log(arr, dep, solution, res);
+        if (dep == arr.length) {
+            res.push(solution.join(''));
+            return
+        }
+        for (var i = 0; i < arr[dep].length;i++) {
+            solution.push(arr[dep][i]);
+            dfs(arr, dep+1, solution, res);
+            solution.pop();
+        }
+    }
+
+function arrange(arr) {
+    var res = [];
+    dfs(arr, 0, [], res)
+    return res;
+}
+
+var testArr =[['A','B'],['a','b'],[1,2]]
+arrange(testArr)
+```
+
+- 题型一：排列、组合、子集相关问题
+
+- 题型二：Flood Fill（洪水）
+
+- 题型三：字符串中的回溯问题
+
+- 题型四：游戏问题
+
 | #      |       题目       | 语言 |  难度  |    注释    |
 | :----- | :--------------: | :--: | :----: | :--------: |
-|        |                  |      |        | 八皇后问题 |
+| 面试38 |   字符串的排列   |  js  | Medium |  排列组合  |
+| 46     |      全排列      |  js  | Medium |  排列组合  |
+| 47     |                  |      |        |  排列组合  |
+| 39     |     组合总和     | py2  | Medium |  排列组合  |
+| 40     |    组合总和II    | py2  | Medium |  排列组合  |
+| 77     |                  |      |        |  排列组合  |
+| 78     |                  |      |        |  排列组合  |
+| 90     |                  |      |        |  排列组合  |
+| 60     |                  |      |        |  排列组合  |
+| 93     |    复原IP地址    |      | Medium |  排列组合  |
+| 733    |                  |      |        |            |
+| 200    |                  |      |        |            |
+| 130    |                  |      |        |            |
+| 79     |                  |      |        |            |
+| 17     |                  |      |        |   字符串   |
+| 784    |                  |      |        |   字符串   |
+| 22     |                  |      |        |   字符串   |
 |        |                  |      |        | 01背包问题 |
-| 面试38 |   字符串的排列   |  js  | Medium |    DFS     |
-| 784    | 字母大小写全排列 |      |  Easy  |    回溯    |
-| 93     |    复原IP地址    |      | Medium |    回溯    |
-| 39     |     组合总和     | py2  | Medium |  回溯算法  |
-| 40     |    组合总和II    | py2  | Medium |  回溯算法  |
-| 216    |   组合总和III    |      |        |            |
-|        |                  |      |        |            |
+| 51     |                  |      |        |  游戏问题  |
+| 37     |                  |      |        |  游戏问题  |
+| 388    |                  |      |        |  游戏问题  |
+| 529    |                  |      |        |  游戏问题  |
+| 784    | 字母大小写全排列 |  js  | Medium |    回溯    |
 
 #### 分支
 
