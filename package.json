@@ -1,0 +1,21 @@
+{
+  "name": "leetcode",
+  "version": "1.0.1",
+  "description": "Data structures and algorithms",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaocchen/leetcode.git"
+  },
+  "author": "zhaocchen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhaocchen/leetcode/issues"
+  },
+  "homepage": "https://github.com/zhaocchen/leetcode#readme",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
