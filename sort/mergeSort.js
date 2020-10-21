@@ -1,43 +1,22 @@
-function mergeArr(leftArr, rightArr) {
-  // 双指针
-  var res = [];
-
-  var i = 0;
-  var j = 0;
-
-  while (i < leftArr.length && j < rightArr.length) {
-    if (leftArr[i] > rightArr[j]) {
-      res.push(rightArr[j]);
-      j++;
+function merge (left, right) {
+  // Merge sorted array
+  let res = [];
+  while (left.length && right.length) {
+    if (left[0] <= right[0]) {
+      res.push(left.shift());
     } else {
-      res.push(leftArr[i]);
-      i++;
+      res.push(right.shift());
     }
   }
-
-  if (i == leftArr.length) {
-    res.push(...rightArr.slice(j));
-  }
-
-  if (j == leftArr.length) {
-    res.push(...leftArr.slice(i));
-  }
-
-  return res;
+  return [...res, ...left, ...right];
 }
 
 function mergeSort(arr) {
-  if (arr.length == 1) {
-    return arr;
-  }
-  var middle = Math.floor(arr.length / 2);
-  var leftArr = arr.slice(0, middle);
-  var rightArr = arr.slice(middle);
-
-  leftArr = mergeSort(leftArr);
-  rightArr = mergeSort(rightArr);
-
-  return mergeArr(leftArr, rightArr);
+  const len = arr.length;
+  if (len < 2) return arr;
+  const half = len / 2;
+  const left = arr.splice(0, half)
+  return merge(mergeSort(left), mergeSort(arr));
 }
 
 var testArr = [61, 17, 29, 22, 34, 60, 72, 21, 50, 1, 62];
