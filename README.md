@@ -19,13 +19,11 @@
 |119|杨辉三角|py2、js|Easy|迭代|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
 |217|存在重复元素|py2、js|Easy|查重new Set([]).size|
-|371|两整数之和（经典位运算）|js|Easy|sum = a ^ b<br />carry = (a & b) << 1|
 |412|Fizz Buzz|py2、js|Easy|Array.from|
 |415|字符串相加|js|Easy|按位+|
 |628|三个数的最大乘积|js|Easy|*|
 |771|宝石与石头|js|Easy|indexOf|
 |836|矩形重叠|js|Easy|逆向思维|
-|989|数组形式的整数加法|js|Easy|按位+|
 |1266|访问所有点的最小时间|js|Easy|Math.abs(num)|
 |1281|整数的各位积和之差|js|Easy|reduce|
 |1295|统计位数为偶数的数字|js|Easy|数字转字符串 num+''|
@@ -442,6 +440,11 @@ Traversals遍历二叉树(先序遍历, 中序遍历, 后序遍历, 深度优先
 |204|计数质数|js|easy|-|
 |342|4的幂|py2|Easy|检查一个数是否为 2 的幂：x > 0 and (x & (x - 1)) == 0<br />若 xx 为 2 的幂且 x%3 == 1，则 xx 为 4 的幂|
 |400|第N个数字|js|Medium|count([100, 999])=(10 ** dep - 10 ** (dep - 1)) * dep|
+|371|两整数之和（经典位运算）|js|Easy|sum = a ^ b<br />carry = (a & b) << 1|
+|989|数组形式的整数加法|js|Easy|按位+|
+|模拟加法|addString|js||已测试|
+|166|分数到小数（模拟除法）||||
+|43|字符串相乘||||
 |m57_2|和为s的连续正数序列|js|a|连续数字求和公式|
 |（经典）|线段是否相交|||isIntersect， 向量（几何）|
 |面试题 16.03. 交点| 交点 |js|Hard|intersection|
