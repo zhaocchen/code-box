@@ -2,6 +2,7 @@ const func = require('./addString');
 
 const testCases = [
   {case: ['1', '2'], answer: '3'},
+  {case: ['0', '2122'], answer: '2122'},
 ]
 
 for(let i = 0; i < 30;i++) {
