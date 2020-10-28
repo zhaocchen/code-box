@@ -10,14 +10,14 @@
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
 |168/171|Excel表序号|js|Easy|26进制|
-|7|整数反转|Py2、js|Easy|取余、取整|
-|9|回文数|js|Easy|整数反转|
-|13|罗马数字转整数|py2、js|Easy|Map|
+|7|整数反转|py, js|Easy|取余、取整|
+|9|回文数|js, ts|Easy|整数反转|
+|13|罗马数字转整数|py, js|Easy|Map|
 |69|x的平方根|py2|Easy|牛顿迭代法<br />res = (res + x / res) / 2|
-|119|杨辉三角|py2、js|Easy|迭代|
+|119|杨辉三角|py, js|Easy|迭代|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
-|217|存在重复元素|py2、js|Easy|查重new Set([]).size|
-|412|Fizz Buzz|py2、js|Easy|Array.from|
+|217|存在重复元素|py, js|Easy|查重new Set([]).size|
+|412|Fizz Buzz|py, js|Easy|Array.from|
 |628|三个数的最大乘积|js|Easy|*|
 |771|宝石与石头|js|Easy|indexOf|
 |836|矩形重叠|js|Easy|逆向思维|
@@ -59,7 +59,7 @@
 
 | #    |   题目   |  语言   | 难度 | 注释 |
 | :--- | :------: | :-----: | :--: | :--: |
-| 1    | 两数之和 | js、py2 | Easy | map  |
+| 1    | 两数之和 | py, js | Easy | map  |
 
 #### 排序
 
@@ -67,7 +67,7 @@
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
 |75|颜色分类|py2|Medium|冒泡排序|
-|179|最大数|py2、js|Medium|冒泡排序、sort|
+|179|最大数|py, js|Medium|冒泡排序、sort|
 |177| 第N高的薪水|sql|Medium|DESC LIMIT|
 |561| [数组拆分I](<https://leetcode-cn.com/problems/array-partition-i/>) |py2|Easy|冒泡排序会超时，推荐sort\sorted|
 |                   |                                                              |         |        |                                 |
@@ -102,14 +102,14 @@
 | #    | 题目                           | 难度    | 语言   | 注释                 |
 | ---- | ------------------------------ | ------- | ------ | -------------------- |
 | 88   | 合并两个有序数组               | js/py2  | Easy   | 左右指针             |
-| 977  | 有序数组的平方                 | js、py2 | Easy   | 左右指针             |
+| 977  | 有序数组的平方                 | py, js | Easy   | 左右指针             |
 | m21  | 调整数组顺序使奇数位于偶数前面 | js      | Easy   | 左右指针             |
 | 283  | 移动零                         | js      | Easy   | 左右指针             |
 | 704  | 二分查找                       | js      | Easy   | 二分查找（快慢指针） |
 | 268  | （查找）缺失数字               | js      | Easy   | 二分查找             |
 | 278  | 第一个错误的版本               | js      | Easy   | 二分                 |
 | 374  | 猜数字大小                     | js      | Easy   | 二分                 |
-| 33   | 搜索旋转排序数组               | js、py2 | Medium | 二分查找             |
+| 33   | 搜索旋转排序数组               | py, js | Medium | 二分查找             |
 | m57  | 何为s的两个数字（有序数组）    | js      | Easy   | 左右指针-两数之和    |
 |      |                                |         |        | 反转数组             |
 | 3    | 无重复字符的最长子串           | js      | Medium | 滑动窗口             |
@@ -131,7 +131,7 @@
 
 | #    | 题目                     | 语言    | 难度 | 注释      |
 | ---- | ------------------------ | ------- | ---- | --------- |
-| 4    | 寻找两个有序数组的中位数 | js、py2 | Hard | 分治-二分 |
+| 4    | 寻找两个有序数组的中位数 | py, js | Hard | 分治-二分 |
 |      |                          |         |      |           |
 
 
@@ -149,15 +149,15 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
-|509|斐波那契数(数列)|py2、js|Easy|dp[i] = i < 2 ? i : dp[i - 1] + dp[i - 2]|
-|1137（147周赛）|第 N 个泰波那契数|py2、js|Easy|dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]|
-|70（经典）| 爬楼梯 |py2、js|Easy|dp[i] = dp[i-1] + dp[i -2]|
+|509|斐波那契数(数列)|py, js|Easy|dp[i] = i < 2 ? i : dp[i - 1] + dp[i - 2]|
+|1137（147周赛）|第 N 个泰波那契数|py, js|Easy|dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]|
+|70（经典）| 爬楼梯 |py, js|Easy|dp[i] = dp[i-1] + dp[i -2]|
 |746| 使用最小花费爬楼梯 |py2|Easy|动态规划|
 |198| 打家劫舍 |py2|Easy|动态规划|
 |740| 删除与获得点数(打家劫舍) |py2|Medium|动态规划|
-|53（经典）<br />剑指offer42| 最大子序列 |py2、js|Easy|Dp[i] = Math.max(dp[i-1]+nums[i], num[i])|
-|152| 乘积最大子序列 |py2、js|Medium|Dp[i] = Math.max(dp[i-1]*nums[i], num[i])<br />由于负负得正需要一个最小子序列辅助|
-|322（经典）| 零钱兑换 |py2、js|Medium|dp[i] = Math.min(dp[i], dp[i-coin] + 1)|
+|53（经典）<br />剑指offer42| 最大子序列 |py, js|Easy|Dp[i] = Math.max(dp[i-1]+nums[i], num[i])|
+|152| 乘积最大子序列 |py, js|Medium|Dp[i] = Math.max(dp[i-1]*nums[i], num[i])<br />由于负负得正需要一个最小子序列辅助|
+|322（经典）| 零钱兑换 |py, js|Medium|dp[i] = Math.min(dp[i], dp[i-coin] + 1)|
 |343| 整数拆分 |js|Medium|dp[i] = Math.max(dp[i], j * (i - j), j * dp[i - j])|
 |377| 组合总和IV |py2|Medium|动态规划|
 |62| 不同路径 |py2|Medium|动态规划|
@@ -355,7 +355,7 @@ Traversals遍历二叉树(先序遍历, 中序遍历, 后序遍历, 深度优先
 
 | #    | 题目                 | 语言    | 难度   | 注释     |
 | ---- | -------------------- | ------- | ------ | -------- |
-| 226  | 翻转二叉树           | py2、js | Easy   | dfs      |
+| 226  | 翻转二叉树           | py, js | Easy   | dfs      |
 | 236  | 二叉树的最近公共祖先 | js      | Medium | LCA 问题 |
 
 #### 二叉搜索树BST
@@ -437,8 +437,8 @@ Traversals遍历二叉树(先序遍历, 中序遍历, 后序遍历, 深度优先
 |204|计数质数|js|easy|-|
 |342|4的幂|py2|Easy|检查一个数是否为 2 的幂：x > 0 and (x & (x - 1)) == 0<br />若 xx 为 2 的幂且 x%3 == 1，则 xx 为 4 的幂|
 |400|第N个数字|js|Medium|count([100, 999])=(10 ** dep - 10 ** (dep - 1)) * dep|
-|66|加一|py2、js|Easy|操作list|
-|67|二进制求和|py2、js|Easy|按位+|
+|66|加一|py, js|Easy|操作list|
+|67|二进制求和|py, js|Easy|按位+|
 |371|两整数之和（经典位运算）|js|Easy|sum = a ^ b<br />carry = (a & b) << 1|
 |989|数组形式的整数加法|js|Easy|按位+|
 |415|字符串相加|js|Easy|按位+|
