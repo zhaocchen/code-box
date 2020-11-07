@@ -248,7 +248,7 @@ arrange(testArr)
 |      |      |      |      |      |
 |      |      |      |      |      |
 
-### 其他数据结构
+### 数据结构
 
 #### 栈
 
@@ -257,33 +257,6 @@ arrange(testArr)
 | 20   | 有效的括号 | js   | Easy | 栈   |
 
 #### 链表
-
-链表, 线性数据结构。相比数组, 元素不存储在相邻位置， 通指针链接。
-
-- 链表 LinkedList
-- 双向链表 DoublyLinkedList
-- 循环链表 CircularLinkedList
-- 有序链表 SortedLinkedList
-- 栈链表 StackLinkedList
-
-优势：
-
-1. 元素个数无上限。
-2. 插入/删除元素， 无需创建空间， 无需移动插入位置以后的元素。
-
-```
-/**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
-```
-
-https://www.geeksforgeeks.org/data-structures/linked-list/
-
-https://www.geeksforgeeks.org/linked-list-in-java/
 
 代码快速访问 https://github.com/daaasheng/leetcode/blob/master/linkedList/leet2.js
 
@@ -335,17 +308,6 @@ var reverseList = function(head) {
 
 #### 二叉树Tree
 
-Traversals遍历二叉树(先序遍历, 中序遍历, 后序遍历, 深度优先DFS, 广度优先BFS)
-
-- PreOrder 先序遍历: 根节点 -> 左子树 -> 右子树 (DFS)
-- InOrder 中序遍历：左子树 -> 根节点 -> 右子树  (DFS)
-- PostOrder 后序遍历：左子树 -> 右子树 -> 根节点  (DFS)
-- LevelOrder 层序遍历 (BFS)
-
-[geeksforgeeks-tree](https://www.geeksforgeeks.org/binary-tree-data-structure/)
-
-[lectures/Trees](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/trees.html)
-
 ```
 /**
  * Definition for a binary tree node.
@@ -355,8 +317,6 @@ Traversals遍历二叉树(先序遍历, 中序遍历, 后序遍历, 深度优先
  * }
  */
 ```
-
-
 
 | #    | 题目                 | 语言    | 难度   | 注释     |
 | ---- | -------------------- | ------- | ------ | -------- |
@@ -374,7 +334,7 @@ Traversals遍历二叉树(先序遍历, 中序遍历, 后序遍历, 深度优先
 | 450      | 删除二叉搜索树中的节点   | js   | Medium | 特殊情况需要修改树枝 |
 | 538\1038 | 把二叉搜索树转换为累加树 | js   | Medium | dfs                  |
 
-完全二叉树（Complete Binary Tree）：
+#### 完全二叉树（Complete Binary Tree）：
 
 若设二叉树的深度为h
 
@@ -385,13 +345,13 @@ Traversals遍历二叉树(先序遍历, 中序遍历, 后序遍历, 深度优先
 
 
 
-满二叉树（Full Binary Tree）：
+#### 满二叉树（Full Binary Tree）：
 
 每个节点都有0或2个子节点
 
 
 
-平衡二叉树：
+#### 平衡二叉树：
 
 一个二叉树*每个节点* 的左右两个子树的高度差的绝对值不超过1。
 
