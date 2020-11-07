@@ -19,7 +19,7 @@
 |217|存在重复元素|py, js|Easy|查重new Set([]).size|
 |412|Fizz Buzz|py, js|Easy|Array.from|
 |628|三个数的最大乘积|js|Easy|*|
-|771|宝石与石头|js|Easy|indexOf|
+|771|宝石与石头|js、ts|Easy|indexOf、RegExp|
 |836|矩形重叠|js|Easy|逆向思维|
 |1266|访问所有点的最小时间|js|Easy|Math.abs(num)|
 |1281|整数的各位积和之差|js|Easy|reduce|
@@ -127,7 +127,7 @@
 - 支限
 
 
-#### 分治法
+#### 分治法 Divide and Conquer
 
 | #    | 题目                     | 语言    | 难度 | 注释      |
 | ---- | ------------------------ | ------- | ---- | --------- |
@@ -172,7 +172,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 
 
-#### 贪心
+#### 贪心 Greedy
 
 
 
@@ -242,6 +242,11 @@ arrange(testArr)
 | 784        | 字母大小写全排列 |  js  | Medium |       回溯       |
 
 #### 分支
+
+|      |      |      |      |      |
+| ---- | ---- | ---- | ---- | ---- |
+|      |      |      |      |      |
+|      |      |      |      |      |
 
 ### 其他数据结构
 
