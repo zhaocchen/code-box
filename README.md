@@ -322,6 +322,7 @@ var reverseList = function(head) {
 | ---- | -------------------- | ------- | ------ | -------- |
 | 100 | 相同的树 | js | Easy | 遍历树 |
 | 226  | 翻转二叉树           | py, js | Easy   | dfs      |
+| 114 | 二叉树展开为链表 | js | Medium |  |
 | 236  | 二叉树的最近公共祖先 | js      | Medium | LCA 问题 |
 
 #### 二叉搜索树BST
