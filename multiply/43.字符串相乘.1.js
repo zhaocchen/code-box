@@ -11,6 +11,7 @@
  * @return {string}
  */
 var multiply = function(num1, num2) {
+    // 暴力
     if ([num1, num2].includes('0')) return '0';
     let res = '';
     const len1 = num1.length, len2 = num2.length;

@@ -12,7 +12,7 @@
  */
 var multiply = function(num1, num2) {
     console.log(num1, num2);
-    // Karatsuba
+    // Karatsuba, 未实现
     const len1 = num1.length, len2 = num2.length;
     if (len1 < 2 || len2 < 2) return num1 * num2 + '';
     // 补齐
@@ -27,10 +27,6 @@ var multiply = function(num1, num2) {
     const res = z0 + (z1 - z2 - z0) * (10 ** half) + z2 * (10 ** (2 * half));
     return res;
 };
-
-function minusString(s1, s2) {
-    // 减
-}
 
 function addString(s1, s2) {
     let nums1 = s1.split('').map(d => parseInt(d));
