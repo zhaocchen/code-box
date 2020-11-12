@@ -324,6 +324,7 @@ var reverseList = function(head) {
 | 226  | 翻转二叉树           | py, js | Easy   | 操作树   |
 | 114 | 二叉树展开为链表 | js | Medium | 操作树 |
 | 654 | 最大二叉树 | js | Medium | 生成树 |
+| 105\106 | 从前序与中序遍历序列构造二叉树 | js | Medium | 生成树 |
 | 236  | 二叉树的最近公共祖先 | js      | Medium | LCA 问题 |
 
 #### 二叉搜索树BST
