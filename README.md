@@ -320,7 +320,7 @@ var reverseList = function(head) {
 
 | #    | 题目                 | 语言    | 难度   | 注释     |
 | ---- | -------------------- | ------- | ------ | -------- |
-| 100 | 相同的树 | js | Easy | 操作树 |
+| 100 | 相同的树 | js | Easy | 校验 |
 | 226  | 翻转二叉树           | py, js | Easy   | 操作树   |
 | 114 | 二叉树展开为链表 | js | Medium | 操作树 |
 | 654 | 最大二叉树 | js | Medium | 生成树 |
@@ -334,7 +334,8 @@ var reverseList = function(head) {
 | 700      | 二叉搜索树中的搜索       | js   | Easy   |                      |
 | 701      | 二叉搜索树中的插入操作   | js   | Easy   | insert               |
 | 450      | 删除二叉搜索树中的节点   | js   | Medium | 特殊情况需要修改树枝 |
-| 538\1038 | 把二叉搜索树转换为累加树 | js   | Medium | dfs                  |
+| 538\1038 | 把二叉搜索树转换为累加树 | js   | Medium | 操作                 |
+| 230      | 二叉搜索树中第K小的元素  | js   | Medium | 查找， 多解          |
 
 #### 完全二叉树（Complete Binary Tree）：
 
