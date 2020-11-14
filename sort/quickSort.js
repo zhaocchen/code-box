@@ -1,5 +1,11 @@
 
+function quickSort(arr) {
+    partition(arr, 0, arr.length - 1)
+    return arr;
+}
+
 function partition(arr, start, end) {
+    if (start >= end) return;
     var pivot = arr[start];
     var i = start
     var j = end;
@@ -17,16 +23,10 @@ function partition(arr, start, end) {
     }
     arr[i] = pivot;
     // console.log(start, end,i, pivot, arr)
-    return i;
-}
-
-function quickSort(arr, start, end) {
-    if (start >= end) return;
-    var pi = partition(arr, start, end)
-    quickSort(arr, start, pi-1)
-    quickSort(arr, pi+1, end);
+    partition(arr, start, i - 1);
+    partition(arr, i + 1, end);
 }
 
 var testArr = [61, 17, 29, 22, 34, 60, 72, 21, 50, 1, 62];
 quickSort(testArr, 0, testArr.length - 1)
-console.log(testArr);
+console.log(quickSort(testArr));
