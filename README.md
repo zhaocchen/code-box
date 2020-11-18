@@ -1,5 +1,3 @@
-
-
 ### leecode
 
 类别(算法,数据库,shell)
@@ -293,14 +291,14 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 #### 堆（8）
 
-#### 链表（9）
+### 链表（9）
 
 代码快速访问 https://github.com/daaasheng/leetcode/blob/master/linkedList/leet2.js
 
 | #                |           题目           | 语言 |  难度  |                          注释                          |
 | :--------------- | :----------------------: | :--: | :----: | :----------------------------------------------------: |
-| 2                |         两数相加         |  js  | Medium |                        链表合并                        |
 | 206\剑指offer 24 |         反转链表         |  js  |  Easy  |                        链表反转                        |
+| 2                |         两数相加         |  js  | Medium |                        链表合并                        |
 | 1290             |     二进制链表转整数     |  js  |  Easy  |                        链表遍历                        |
 | 83               | 删除排序链表中的重复元素 |  js  |  Easy  |                  链表删除（方法二？）                  |
 | m2_1             |       移除重复节点       |  js  |  Easy  |                        快慢指针                        |
@@ -316,41 +314,20 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 355              |        设计推特?         |  js  | Medium |                     (应用)增删改查                     |
 | 141              |         环形链表         |  js  |  Easy  |                        快慢指针                        |
 
-反转链表
+#### 双链表
 
-```
-var reverseList = function(head) {
-    var prev = null
-    var cur = head
-    var next = null
-    while (cur != null) {
-        next = cur.next
-        cur.next = prev
-        prev = cur
-        cur = next
-    }
-    return prev
-};
 
-var reverseList = function(head) {
-    if (head == null || head.next == null) return head
-    var reverseedList = reverseList(head.next)
-    head.next.next = head
-    head.next = null
-    return reverseedList
-};
-```
+
+| #    | 题目        | 语言 | 难度   | 注释              |
+| ---- | ----------- | ---- | ------ | ----------------- |
+| 146  | LRU缓存机制 | js   | Medium | 哈希表+双链表O(1) |
+
+
 
 ### 二叉树（9）
 
 ```
-/**
- * Definition for a binary tree node.
- * function TreeNode(val) {
- *     this.val = val;
- *     this.left = this.right = null;
- * }
- */
+
 ```
 
 | #    | 题目                 | 语言    | 难度   | 注释     |
