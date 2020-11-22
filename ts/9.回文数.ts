@@ -6,16 +6,15 @@
 
 // @lc code=start
 function isPalindrome(x: number): boolean {
-    let xStr: string = String(x);
-    let len: number = xStr.length;
-    let half: number = Math.ceil(len / 2);
-    for (let i: number = 0; i <= len; i++) {
-        if(xStr.charAt(i) != xStr.charAt(len - i - 1)) {
-            return false;
-        }
+    if (x < 0) return false;
+    if (x < 10) return true;
+    let num: number = x;
+    let res: number = 0;
+    while (num > 0) {
+        res = res * 10 + num % 10;
+        num = Math.floor(num / 10);
     }
-    return true;
+    return res == x;
 };
 // @lc code=end
 
-// console.log(isPalindrome(121))
