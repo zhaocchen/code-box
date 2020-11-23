@@ -7,6 +7,7 @@
 
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
+|1|两数之和|py, js|Easy|lastIndexOf|
 |168/171|Excel表序号|js|Easy|26进制|
 |7|整数反转|py, js, ts|Easy|取余、取整<br />注意题中的安全范围|
 |9|回文数|js, ts|Easy|整数反转<br />不将整数转为字符串来判断|
@@ -245,7 +246,6 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 | #    | 题目                           | 难度    | 语言   | 注释                 |
 | ---- | ------------------------------ | ------- | ------ | -------------------- |
-| 1 | 两数之和 | py, js | Easy | map |
 | 88   | 合并两个有序数组               | js/py2  | Easy   | 左右指针             |
 | 977  | 有序数组的平方                 | py, js | Easy   | 左右指针             |
 | m21  | 调整数组顺序使奇数位于偶数前面 | js      | Easy   | 左右指针             |
