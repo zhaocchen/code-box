@@ -11,7 +11,6 @@
 |7|整数反转|py, js, ts|Easy|取余、取整<br />注意题中的安全范围|
 |9|回文数|js, ts|Easy|整数反转<br />不将整数转为字符串来判断|
 |13|罗马数字转整数|py, js, ts|Easy|Map|
-|69|x的平方根|py2|Easy|牛顿迭代法<br />res = (res + x / res) / 2|
 |119|杨辉三角|py, js|Easy|迭代|
 |189|旋转数组|js|Easy|Array.splice/slice/unshift|
 |217|存在重复元素|py, js|Easy|查重new Set([]).size|
@@ -203,7 +202,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 | #    |   题目   |  语言   | 难度 | 注释 |
 | :--- | :------: | :-----: | :--: | :--: |
-| 1    | 两数之和 | py, js | Easy | map  |
+| 69 | x的平方根 | py2, ts | Easy | 二分法 |
 
 #### 排序
 
@@ -246,6 +245,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 | #    | 题目                           | 难度    | 语言   | 注释                 |
 | ---- | ------------------------------ | ------- | ------ | -------------------- |
+| 1 | 两数之和 | py, js | Easy | map |
 | 88   | 合并两个有序数组               | js/py2  | Easy   | 左右指针             |
 | 977  | 有序数组的平方                 | py, js | Easy   | 左右指针             |
 | m21  | 调整数组顺序使奇数位于偶数前面 | js      | Easy   | 左右指针             |
