@@ -13,7 +13,7 @@
 |9|回文数|js, ts|Easy|整数反转<br />不将整数转为字符串来判断|
 |13|罗马数字转整数|py, js, ts|Easy|Map|
 |119|杨辉三角 II|py, js, ts|Easy|迭代|
-|189|旋转数组|js|Easy|Array.splice/slice/unshift|
+|189|旋转数组|js, ts|Easy|Array.splice/slice/unshift|
 |217|存在重复元素|py, js|Easy|查重new Set([]).size|
 |412|Fizz Buzz|py, js|Easy|Array.from|
 |628|三个数的最大乘积|js|Easy|*|
