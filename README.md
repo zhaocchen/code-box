@@ -208,7 +208,8 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 374 | 猜数字大小 | js, 无ts | Easy | LC1二分 |
 | 33 | 搜索旋转排序数组 | py, js, ts | Medium | LC1二分查找 |
 | 162 | 寻找峰值 | ts | Medium | LC2 |
-| 153 | 寻找旋转排序数组中的最小值 | js | Medium | LC2 |
+| 153 | 寻找旋转排序数组中的最小值 | ts | Medium | LC2 |
+| 34 | 在排序数组中查找元素的第一个和最后一个位置 | ts | Medium | LC3 |
 
 #### 排序
 
