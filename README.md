@@ -207,6 +207,8 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 69 | x的平方根 | py2, ts | Easy | LC1二分法 |
 | 374 | 猜数字大小 | js, 无ts | Easy | LC1二分 |
 | 33 | 搜索旋转排序数组 | py, js, ts | Medium | LC1二分查找 |
+| 162 | 寻找峰值 | ts | Medium | LC2 |
+| 153 | 寻找旋转排序数组中的最小值 | js | Medium | LC2 |
 
 #### 排序
 
@@ -220,7 +222,6 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 |561| [数组拆分I](<https://leetcode-cn.com/problems/array-partition-i/>) |py2|Easy|冒泡排序会超时，推荐sort\sorted|
 |665| [非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/) |py2|Easy|移除间断点|
 |81（147周赛精选）| 搜索旋转排序数组ii |py2|Medium|二分法搜索|
-|153| 寻找旋转排序数组中的最小值 |js|Medium|*二分查找(有区别)|
 |74| 搜索二维矩阵 |js|Medium|两层二分查找|
 |448| 找到所有数组中消失的数字 |py2|Easy|超时，元素转索引|
 |442| 数组中重复的数据 |py2|Medium|元素转索引|
