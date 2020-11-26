@@ -203,7 +203,10 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 | #    |   题目   |  语言   | 难度 | 注释 |
 | :--- | :------: | :-----: | :--: | :--: |
-| 69 | x的平方根 | py2, ts | Easy | 二分法 |
+| 704 | 二分查找 | js, ts | Easy | LC1二分查找（快慢指针） |
+| 69 | x的平方根 | py2, ts | Easy | LC1二分法 |
+| 374 | 猜数字大小 | js, 无ts | Easy | LC1二分 |
+| 33 | 搜索旋转排序数组 | py, js, ts | Medium | LC1二分查找 |
 
 #### 排序
 
@@ -215,7 +218,6 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 |177| 第N高的薪水|sql|Medium|DESC LIMIT|
 |215| 数组中的第K个最大元素 |js|Medium|选择、快速|
 |561| [数组拆分I](<https://leetcode-cn.com/problems/array-partition-i/>) |py2|Easy|冒泡排序会超时，推荐sort\sorted|
-|                   |                                                              |         |        |                                 |
 |665| [非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/) |py2|Easy|移除间断点|
 |81（147周赛精选）| 搜索旋转排序数组ii |py2|Medium|二分法搜索|
 |153| 寻找旋转排序数组中的最小值 |js|Medium|*二分查找(有区别)|
@@ -250,13 +252,9 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 977  | 有序数组的平方                 | py, js | Easy   | 左右指针             |
 | m21  | 调整数组顺序使奇数位于偶数前面 | js      | Easy   | 左右指针             |
 | 283  | 移动零                         | js      | Easy   | 左右指针             |
-| 704  | 二分查找                       | js      | Easy   | 二分查找（快慢指针） |
 | 268  | （查找）缺失数字               | js      | Easy   | 二分查找             |
 | 278  | 第一个错误的版本               | js      | Easy   | 二分                 |
-| 374  | 猜数字大小                     | js      | Easy   | 二分                 |
-| 33   | 搜索旋转排序数组               | py, js | Medium | 二分查找             |
 | m57  | 何为s的两个数字（有序数组）    | js      | Easy   | 左右指针-两数之和    |
-|      |                                |         |        | 反转数组             |
 | 3    | 无重复字符的最长子串           | js      | Medium | 滑动窗口             |
 | 209  | 长度最小的子数组               | js      | Medium | 滑动窗口             |
 | 424  | 替换后的最长重复字符           | ?       | Medium | 滑动窗口             |
