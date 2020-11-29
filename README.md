@@ -284,6 +284,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 724  | 寻找数组的中心索引 | ts   | Easy   | LC1  |
 | 35   | 搜索插入位置       | ts   | Easy   | LC1  |
 | 56   | 合并区间           | ts   | Medium | LC1  |
+| 867  | 转置矩阵           | ts   | Easy   | LC   |
 
 #### 栈（8）
 
