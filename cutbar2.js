@@ -1,13 +1,16 @@
-function cutbar(m, n) {
-    // 逆向思维
-    let depth = 0;
-    let sum = 1;
-    while (sum < n) {
-        sum += (sum < m ? sum : m);
-        depth++;
+function cutbar(m, n, sum, depth) {
+    // console.log('m, n, sum, depth: ', m, n, sum, depth);
+    if (sum >= n) {
+        return depth;
+    } else if (sum < m) {
+        return cutbar(m, n, sum * 2, depth+1)
+    } else {
+        return cutbar(m, n, sum + m, depth+1)
     }
-    return depth;
 }
 
-console.log(cutbar(3, 20));
-console.log(cutbar(5, 100));
+console.log(cutbar(3, 20, 1, 0));
+console.log(cutbar(5, 100, 1, 0));
+
+// 8
+// 22
