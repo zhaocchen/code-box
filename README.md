@@ -9,7 +9,6 @@
 |:-|:-:|:-:|:-:|:-:|
 |1|两数之和|py, js, ts|Easy|lastIndexOf|
 |168/171|Excel表序号|js|Easy|26进制|
-|7|整数反转|py, js, ts|Easy|取余、取整<br />注意题中的安全范围|
 |9|回文数|js, ts|Easy|整数反转<br />不将整数转为字符串来判断|
 |13|罗马数字转整数|py, js, ts|Easy|Map|
 |119|杨辉三角 II|py, js, ts|Easy|迭代|
@@ -47,7 +46,6 @@
 |58| 最后一个单词的长度 | js | a | Array.split(reg) |
 |151| 翻转字符串里的单词 | js | Medium | Array.reverse |
 |819| 最常见的单词 | js | Easy | Map |
-|8| 字符串转换整数 (atoi) | js | Medium | 判断细节处理 |
 |349| 两个数组的交集 | js | Easy | set |
 |299| 猜数字游戏 | js | Easy | 遍历字符串和数组 |
 |165（经典）| 比较版本号<br />前端通用的版本比较 | Js | Medium | -- |
@@ -264,6 +262,20 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 56   | 合并区间           | ts   | Medium | LC1          |
 | 867  | 转置矩阵           | ts   | Easy   | LC           |
 | 48   | 旋转图像           | js   | Medium | 旋转二维数组 |
+
+#### 字符串
+
+| #    | 题目                     | 语言       | 难度   | 注释                                               |
+| ---- | ------------------------ | ---------- | ------ | -------------------------------------------------- |
+| 344  | 反转字符串               | js         | Easy   | o(1)双指针                                         |
+| 7    | 整数反转                 | py, js, ts | Easy   | 取余、取整<br />注意题中的安全范围                 |
+| 387  | 字符串中的第一个唯一字符 | js         | Easy   | for * 2                                            |
+| 242  | 有效的字母异位词         | js         | Easy   | 哈希表                                             |
+| 125  | 验证回文串               | js         | Easy   | 正则                                               |
+| 8    | 字符串转换整数 (atoi)    | js         | Medium | 判断细节处理                                       |
+| 28   | 实现strStr()             | js         | Easy   | String.prototype.substring(indexStart[, indexEnd]) |
+| 38   | 外观数列                 | js         | Easy   | For * 2                                            |
+| 14   | 最长公共前缀             | js         | Easy   | for * 2                                            |
 
 #### 栈（8）
 
