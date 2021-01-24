@@ -145,6 +145,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 198                         |         打家劫舍         |  py2   |  Easy  |                           动态规划                           |
 | 740                         | 删除与获得点数(打家劫舍) |  py2   | Medium |                           动态规划                           |
 | 53（经典）<br />剑指offer42 |        最大子序列        | py, js |  Easy  |          Dp[i] = Math.max(dp[i-1]+nums[i], num[i])           |
+| 5                           |       最长回文子串       |   js   | Medium |          dp[i] [j] = dp[i+1] [j-1] ^ s[i] === s[j]           |
 | 152                         |      乘积最大子序列      | py, js | Medium | Dp[i] = Math.max(dp[i-1]*nums[i], num[i])<br />由于负负得正需要一个最小子序列辅助 |
 | 322（经典）                 |         零钱兑换         | py, js | Medium |           dp[i] = Math.min(dp[i], dp[i-coin] + 1)            |
 | 343                         |         整数拆分         |   js   | Medium |     dp[i] = Math.max(dp[i], j * (i - j), j * dp[i - j])      |
