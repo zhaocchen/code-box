@@ -125,7 +125,9 @@ arrange(testArr)
 
 
 
-#### 动态规划 DynamicProgramming
+#### 动态规划 
+
+DynamicProgramming
 
 核心思想：
 
@@ -154,7 +156,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 887                         |     扔鸡蛋（谷歌）?      |   js   |  Hard  |                           动态规划                           |
 | 552                         |     学生出勤记录II ?     |   --   |  Hard  |                      组合问题-动态规划                       |
 
-**二维动态规划**
+##### 二维动态规划
 
 | #           | 题目           | 语言 | 难度   | 注释                                                         |
 | ----------- | -------------- | ---- | ------ | ------------------------------------------------------------ |
@@ -163,7 +165,11 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 剑指offer47 | 礼物的最大价值 | js   | Medium | dp[i] [j] = Math.max(左上， 上， 左)                         |
 | 剑指offer19 | 正则表达式匹配 | js   | Medium | 细节特殊处理                                                 |
 
+##### 背包问题
 
+| #    | 题目 | 语言 | 难度 | 注释 |
+| ---- | ---- | ---- | ---- | ---- |
+|      |      |      |      |      |
 
 
 
@@ -269,17 +275,19 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 #### 字符串
 
-| #    | 题目                     | 语言       | 难度   | 注释                                               |
-| ---- | ------------------------ | ---------- | ------ | -------------------------------------------------- |
-| 344  | 反转字符串               | js         | Easy   | o(1)双指针                                         |
-| 7    | 整数反转                 | py, js, ts | Easy   | 取余、取整<br />注意题中的安全范围                 |
-| 387  | 字符串中的第一个唯一字符 | js         | Easy   | for * 2                                            |
-| 242  | 有效的字母异位词         | js         | Easy   | 哈希表                                             |
-| 125  | 验证回文串               | js         | Easy   | 正则                                               |
-| 8    | 字符串转换整数 (atoi)    | js         | Medium | 判断细节处理                                       |
-| 28   | 实现strStr()             | js         | Easy   | String.prototype.substring(indexStart[, indexEnd]) |
-| 38   | 外观数列                 | js         | Easy   | For * 2                                            |
-| 14   | 最长公共前缀             | js         | Easy   | for * 2                                            |
+| #           | 题目                     | 语言       | 难度   | 注释                                               |
+| ----------- | ------------------------ | ---------- | ------ | -------------------------------------------------- |
+| 面试01.02   | 判定是否互为字符重排     | js         | Easy   | Sort、charCodeAt                                   |
+| 567（面试） | 字符串排列               | js         | Medium | 滑动窗口+array记录状态                             |
+| 344         | 反转字符串               | js         | Easy   | o(1)双指针                                         |
+| 7           | 整数反转                 | py, js, ts | Easy   | 取余、取整<br />注意题中的安全范围                 |
+| 387         | 字符串中的第一个唯一字符 | js         | Easy   | for * 2                                            |
+| 242         | 有效的字母异位词         | js         | Easy   | 哈希表                                             |
+| 125         | 验证回文串               | js         | Easy   | 正则                                               |
+| 8           | 字符串转换整数 (atoi)    | js         | Medium | 判断细节处理                                       |
+| 28          | 实现strStr()             | js         | Easy   | String.prototype.substring(indexStart[, indexEnd]) |
+| 38          | 外观数列                 | js         | Easy   | For * 2                                            |
+| 14          | 最长公共前缀             | js         | Easy   | for * 2                                            |
 
 #### 栈（8）
 
