@@ -138,28 +138,39 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 
 
-| #                           |           题目           |  语言  |  难度  |                             注释                             |
-| :-------------------------- | :----------------------: | :----: | :----: | :----------------------------------------------------------: |
-| 509                         |     斐波那契数(数列)     | py, js |  Easy  |          dp[i] = i < 2 ? i : dp[i - 1] + dp[i - 2]           |
-| 1137（147周赛）             |    第 N 个泰波那契数     | py, js |  Easy  |          dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]           |
-| 70（经典）                  |          爬楼梯          | py, js |  Easy  |                  dp[i] = dp[i-1] + dp[i -2]                  |
-| 746                         |    使用最小花费爬楼梯    |  py2   |  Easy  |                           动态规划                           |
-| 198                         |         打家劫舍         |  py2   |  Easy  |                           动态规划                           |
-| 740                         | 删除与获得点数(打家劫舍) |  py2   | Medium |                           动态规划                           |
-| 53（经典）<br />剑指offer42 |        最大子序列        | py, js |  Easy  |          Dp[i] = Math.max(dp[i-1]+nums[i], num[i])           |
-| 5                           |       最长回文子串       |   js   | Medium |          dp[i] [j] = dp[i+1] [j-1] ^ s[i] === s[j]           |
-| 152                         |      乘积最大子序列      | py, js | Medium | Dp[i] = Math.max(dp[i-1]*nums[i], num[i])<br />由于负负得正需要一个最小子序列辅助 |
-| 322（经典）                 |         零钱兑换         | py, js | Medium |           dp[i] = Math.min(dp[i], dp[i-coin] + 1)            |
-| 343                         |         整数拆分         |   js   | Medium |     dp[i] = Math.max(dp[i], j * (i - j), j * dp[i - j])      |
-| 377                         |        组合总和IV        |  py2   | Medium |                           动态规划                           |
-| 62                          |         不同路径         |  py2   | Medium |                           动态规划                           |
-| 887                         |     扔鸡蛋（谷歌）?      |   js   |  Hard  |                           动态规划                           |
-| 552                         |     学生出勤记录II ?     |   --   |  Hard  |                      组合问题-动态规划                       |
+| #                      |           题目           |  语言  |  难度  |                             注释                             |
+| :--------------------- | :----------------------: | :----: | :----: | :----------------------------------------------------------: |
+| 509                    |     斐波那契数(数列)     | py, js |  Easy  |          dp[i] = i < 2 ? i : dp[i - 1] + dp[i - 2]           |
+| 1137（147周赛）        |    第 N 个泰波那契数     | py, js |  Easy  |          dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]           |
+| 70（经典）             |          爬楼梯          | py, js |  Easy  |                  dp[i] = dp[i-1] + dp[i -2]                  |
+| 53（经典）             |       最大子序列和       | py, js |  Easy  |          dp[i] = Math.max(dp[i-1]+nums[i], nums[i])          |
+| 剑指Offer42（同53）    |    连续子数组的最大和    |   js   |  Easy  |                              -                               |
+| 121                    |    买卖股票的最佳时机    |   js   |  Easy  |       dp[i] = Math.max(dp[i-1], prices[i] - minPrice)        |
+| 剑指Offer63（121）     |      股票的最大利润      |   js   | Medium |                              -                               |
+| 746                    |    使用最小花费爬楼梯    |  py2   |  Easy  |                           动态规划                           |
+| 198                    |         打家劫舍         |  py2   |  Easy  |          dp[i] = Math.max(dp[i-1], dp[i-2]+nums[i])          |
+| 740                    | 删除与获得点数(打家劫舍) |  py2   | Medium |                           动态规划                           |
+| 152                    |      乘积最大子序列      | py, js | Medium | Dp[i] = Math.max(dp[i-1]*nums[i], num[i])<br />由于负负得正需要一个最小子序列辅助 |
+| 322（经典）            |         零钱兑换         | py, js | Medium |           dp[i] = Math.min(dp[i], dp[i-coin] + 1)            |
+| 343                    |         整数拆分         |   js   | Medium |     dp[i] = Math.max(dp[i], j * (i - j), j * dp[i - j])      |
+| 剑指Offer14-1（同343） |          剪绳子          |   js   | Medium |                              -                               |
+| 377                    |        组合总和IV        |  py2   | Medium |                           动态规划                           |
+| 62                     |         不同路径         |  py2   | Medium |                           动态规划                           |
+| 887                    |     扔鸡蛋（谷歌）?      |   js   |  Hard  |                           动态规划                           |
+| 552                    |     学生出勤记录II ?     |   --   |  Hard  |                      组合问题-动态规划                       |
+
+##### 动态规划+其他思想
+
+| #                    | 题目   | 语言 | 难度   | 注释            |
+| -------------------- | ------ | ---- | ------ | --------------- |
+| 264                  | 丑数II | js   | Medium | 动态规划+三指针 |
+| 剑指Offer49（同264） | 丑数   | js   | Medium | -               |
 
 ##### 二维动态规划
 
 | #           | 题目           | 语言 | 难度   | 注释                                                         |
 | ----------- | -------------- | ---- | ------ | ------------------------------------------------------------ |
+| 5           | 最长回文子串   | js   | Medium | dp[i] [j] = dp[i+1] [j-1] ^ s[i] === s[j]                    |
 | 72          | 编辑距离       | js   | Medium | dp[i+1] [j+1] = Math.min(dp[i] [j], dp[i+1] [j], dp[i] [j+1]) + 1; |
 | 1143（LCS） | 最长公共子序列 | js   | Medium | s1 == s2, dp[i+1] [j+1] = 1 + dp[i] [j]<br />s1 != s2, dp[i+1] [j+1] = Math.max(dp[i] [j], dp[i] [j+1], dp[i+1] [j]) |
 | 剑指offer47 | 礼物的最大价值 | js   | Medium | dp[i] [j] = Math.max(左上， 上， 左)                         |
@@ -189,6 +200,8 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 | #    |   题目   |  语言   | 难度 | 注释 |
 | :--- | :------: | :-----: | :--: | :--: |
+| 268 | （查找）缺失数字 | js | Easy | 二分查找 |
+| 278 | 第一个错误的版本 | js | Easy | 二分 |
 | 704 | 二分查找 | js, ts | Easy | LC1二分查找（快慢指针） |
 | 69 | x的平方根 | py2, ts | Easy | LC1二分法 |
 | 374 | 猜数字大小 | js, 无ts | Easy | LC1二分 |
@@ -240,8 +253,6 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 977  | 有序数组的平方                 | py, js | Easy   | 左右指针             |
 | m21  | 调整数组顺序使奇数位于偶数前面 | js      | Easy   | 左右指针             |
 | 283  | 移动零                         | js      | Easy   | 左右指针             |
-| 268  | （查找）缺失数字               | js      | Easy   | 二分查找             |
-| 278  | 第一个错误的版本               | js      | Easy   | 二分                 |
 | m57  | 何为s的两个数字（有序数组）    | js      | Easy   | 左右指针-两数之和    |
 | 3    | 无重复字符的最长子串           | js      | Medium | 滑动窗口             |
 | 209  | 长度最小的子数组               | js      | Medium | 滑动窗口             |
