@@ -462,9 +462,14 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 50       | 幂函数 Pow(x, n) | Js   | Medium | x ** n<br />快速幂                       |
 | ~~1108~~ | ~~IP地址无效化~~ |      |        |                                          |
 | m5       | 替换空格         | js   | a      | spilt().join()<br/>replace(/\/g, newStr) |
-|          |                  |      |        |                                          |
 
+#### 设计
 
+| #                    | 题目            | 语言 | 难度   | 注释     |
+| -------------------- | --------------- | ---- | ------ | -------- |
+| 155                  | 最小栈          | js   | Easy   | 辅助栈   |
+| 剑指Offer30（同155） | 包含min函数的栈 | js   | Easy   | -        |
+| 384                  | 打乱数组        | js   | Medium | 洗牌算法 |
 
 #### 数学问题
 
