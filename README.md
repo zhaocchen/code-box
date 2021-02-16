@@ -8,14 +8,11 @@
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
 |1|两数之和|py, js, ts|Easy|lastIndexOf|
-|168/171|Excel表序号|js|Easy|26进制|
 |9|回文数|js, ts|Easy|整数反转<br />不将整数转为字符串来判断|
-|13|罗马数字转整数|py, js, ts|Easy|Map|
 |119|杨辉三角 II|py, js, ts|Easy|迭代|
 |121|买卖股票的最佳时机|js|Easy|--|
 |189|旋转数组|js, ts|Easy|Array.splice/slice/unshift|
 |217|存在重复元素|py, js, ts|Easy|查重new Set([]).size|
-|412|Fizz Buzz|py,  js, ts|Easy|Array.from|
 |628|三个数的最大乘积|js|Easy|*|
 |771|宝石与石头|js, ts|Easy|indexOf、RegExp|
 |836|矩形重叠|js|Easy|逆向思维|
@@ -476,7 +473,9 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
-|204|计数质数|js|easy|-|
+|412|Fizz Buzz|py,  js, ts|Easy|Array.from|
+|204|计数质数|js|Easy|-|
+|326|3的幂|js|Easy|-|
 |342|4的幂|py2|Easy|检查一个数是否为 2 的幂：x > 0 and (x & (x - 1)) == 0<br />若 xx 为 2 的幂且 x%3 == 1，则 xx 为 4 的幂|
 |400|第N个数字|js|Medium|count([100, 999])=(10 ** dep - 10 ** (dep - 1)) * dep|
 |66|加一|py, js|Easy|操作list|
@@ -490,6 +489,14 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 |m57_2|和为s的连续正数序列|js|a|连续数字求和公式|
 |（经典）|线段是否相交|||isIntersect， 向量（几何）|
 |面试题 16.03. 交点| 交点 |js|Hard|intersection|
+
+####  进制转换
+
+| #    | 题目           | 语言       | 难度 | 注释   |
+| ---- | -------------- | ---------- | ---- | ------ |
+| 13   | 罗马数字转整数 | py, js, ts | Easy | Map    |
+| 168  | Excel表列名称  | js         | Easy | 26进制 |
+| 171  | Excel表序号    | js         | Easy | -      |
 
 #### 统计
 
