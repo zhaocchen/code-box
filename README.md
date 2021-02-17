@@ -9,6 +9,7 @@
 |:-|:-:|:-:|:-:|:-:|
 |1|两数之和|py, js, ts|Easy|lastIndexOf|
 |9|回文数|js, ts|Easy|整数反转<br />不将整数转为字符串来判断|
+|118|杨辉三角|js|Easy|嵌套循环|
 |119|杨辉三角 II|py, js, ts|Easy|迭代|
 |121|买卖股票的最佳时机|js|Easy|--|
 |189|旋转数组|js, ts|Easy|Array.splice/slice/unshift|
@@ -497,6 +498,16 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 13   | 罗马数字转整数 | py, js, ts | Easy | Map    |
 | 168  | Excel表列名称  | js         | Easy | 26进制 |
 | 171  | Excel表序号    | js         | Easy | -      |
+
+#### 位运算
+
+| #               | 题目         | 语言 | 难度 | 注释                       |
+| --------------- | ------------ | ---- | ---- | -------------------------- |
+| 190             | 颠倒二进制位 | js   | Easy | 获取末位+移位+无符号移位   |
+| 191（汉明重量） | 位1的个数    | js   | Easy | 移位/按位与                |
+| 461（汉明距离） | 汉明距离     | js   | Easy | 按位异或+布赖恩-克尼根算法 |
+
+
 
 #### 统计
 
