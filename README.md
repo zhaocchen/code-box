@@ -303,6 +303,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 28          | 实现strStr()             | js         | Easy   | String.prototype.substring(indexStart[, indexEnd]) |
 | 38          | 外观数列                 | js         | Easy   | For * 2                                            |
 | 14          | 最长公共前缀             | js         | Easy   | for * 2                                            |
+| 394         | 字符串解码               | Js         | Medium | 栈                                                 |
 
 #### 栈（8）
 
