@@ -391,6 +391,8 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | #                    | 题目                     | 语言 | 难度   | 注释                 |
 | -------------------- | ------------------------ | ---- | ------ | -------------------- |
 | 98                   | 验证二叉搜索树           | js   | Medium | 递归+辅助函数        |
+| 235                  | 二叉搜索树的最近公共祖先 | js   | Easy   | 递归                 |
+| 剑指Offer68-I        | 二叉搜索树的最近公共祖先 | js   | Easy   | -                    |
 | 108                  | 将有序数组转为二叉搜索树 | js   | Easy   | 递归+辅助函数        |
 | 700                  | 二叉搜索树中的搜索       | js   | Easy   |                      |
 | 701                  | 二叉搜索树中的插入操作   | js   | Easy   | insert               |
