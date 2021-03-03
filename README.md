@@ -383,7 +383,8 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 654 | 最大二叉树 | js | Medium | 生成树 |
 | 105 | 从前序与中序遍历序列构造二叉树 | js | Medium | 生成树 |
 | 106 | 从中序与后序遍历序列构造二叉树 | js | Medium | 生成树 |
-| 236  | 二叉树的最近公共祖先 | js      | Medium | LCA 问题 |
+| 236  | 二叉树的最近公共祖先 | js      | Medium | LCA 问题（复杂递归） |
+| 剑指Offer68II | 二叉树的最近公共祖先 | js | Easy | - |
 
 #### 二叉搜索树BST
 
