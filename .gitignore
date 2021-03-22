@@ -2,3 +2,4 @@
 report.*.json
 node_modules
 yarn.lock
+/1test

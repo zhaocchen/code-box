@@ -87,37 +87,12 @@ a ^ b ^ a = a
 
 
 
-#### 回溯算法
+#### 回溯法
 
-多叉树的深度优先遍历问题
-
-var arr =[[‘A’,’B’],[‘a’,’b’],[1,2]] 求二维数组的全排列组合  结果：Aa1,Aa2,Ab1,Ab2,Ba1,Ba2,Bb1,Bb2
-
-```
-    function dfs(arr, dep, solution, res) {
-        // console.log(arr, dep, solution, res);
-        if (dep == arr.length) {
-            res.push(solution.join(''));
-            return
-        }
-        for (var i = 0; i < arr[dep].length;i++) {
-            solution.push(arr[dep][i]);
-            dfs(arr, dep+1, solution, res);
-            solution.pop();
-        }
-    }
-
-function arrange(arr) {
-    var res = [];
-    dfs(arr, 0, [], res)
-    return res;
-}
-
-var testArr =[['A','B'],['a','b'],[1,2]]
-arrange(testArr)
-```
-
-
+| #                   | 题目         | 语言 | 难度   | 注释     |
+| ------------------- | ------------ | ---- | ------ | -------- |
+| 79                  | 单词搜索     | js   | Medium | dfs+剪枝 |
+| 剑指Offer12（同79） | 矩阵中的路径 | js   | Medium | dfs+剪枝 |
 
 #### 动态规划 
 
