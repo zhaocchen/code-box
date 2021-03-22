@@ -194,6 +194,9 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 | #    |   题目   |  语言   | 难度 | 注释 |
 | :--- | :------: | :-----: | :--: | :--: |
+| 153 | 寻找旋转排序数组中的最小值 | ts | Medium | LC2 |
+| 154 | 寻找旋转排序数组中的最小值II（支持重复） | js | Hard | 二分 |
+| 剑指Offer11（同154） | 旋转数组的最小数字 | js | Easy | 二分 |
 | 268 | （查找）缺失数字 | js | Easy | 二分查找 |
 | 278 | 第一个错误的版本 | js | Easy | 二分 |
 | 704 | 二分查找 | js, ts | Easy | LC1二分查找（快慢指针） |
@@ -201,7 +204,6 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 374 | 猜数字大小 | js, 无ts | Easy | LC1二分 |
 | 33 | 搜索旋转排序数组 | py, js, ts | Medium | LC1二分查找 |
 | 162 | 寻找峰值 | ts | Medium | LC2 |
-| 153 | 寻找旋转排序数组中的最小值 | ts | Medium | LC2 |
 | 34 | 在排序数组中查找元素的第一个和最后一个位置 | ts | Medium | LC3 |
 
 #### 排序
