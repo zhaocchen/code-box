@@ -445,14 +445,6 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | ---- | -------- | ---- | ---- | ----------- |
 | 0519 | 寻找组合 | js   | --   | （应用）Map |
 
-#### 实现内置方法
-
-| #        | 题目             | 语言 | 难度   | 注释                                     |
-| -------- | ---------------- | ---- | ------ | ---------------------------------------- |
-| 50       | 幂函数 Pow(x, n) | Js   | Medium | x ** n<br />快速幂                       |
-| ~~1108~~ | ~~IP地址无效化~~ |      |        |                                          |
-| m5       | 替换空格         | js   | a      | spilt().join()<br/>replace(/\/g, newStr) |
-
 #### 设计
 
 | #                    | 题目            | 语言 | 难度   | 注释     |
@@ -499,58 +491,18 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 191（汉明重量） | 位1的个数    | js   | Easy | 移位/按位与                |
 | 461（汉明距离） | 汉明距离     | js   | Easy | 按位异或+布赖恩-克尼根算法 |
 
+#### 数学运算
 
+| #                   | 题目             | 语言 | 难度   | 注释 |
+| ------------------- | ---------------- | ---- | ------ | ---- |
+| 50                  | 幂函数 Pow(x, n) | js   | Medium |      |
+| 剑指Offer16（同50） | 数值的整数次方   | js   | Medium |      |
 
 #### 统计
 
 - 平均值
 - 中位数
 - 众数
-
-#### 数组
-
-字典序： ....
-
-- 二分法搜索(长度大于1)
-
-```
-function bs(nums, target, start_index, end_index) {
-  while(start_index <= end_index) {
-    mid_index = (start_index+end_index) / 2
-    cur_num = nums[mid_index]
-    if (target == cur_num) {
-      return mid_index
-    } else if (target < cur_num) {
-      end_index = mid_index - 1
-    } else {
-      start_index = mid_index + 1
-    }
-  }
-  return -1
-}
-
-=======================递归写法==============================
-function bs(nums, target, start_index, end_index) {
-  if(start_index > end_index) {
-    return -1
-  }
-  mid_index = (start_index+end_index) / 2
-  cur_num = nums[mid_index]
-  if (target == cur_num) {
-    return mid_index
-  } else if (target < cur_num) {
-    return bs(nums, target, start_index, mid_index - 1)
-  } else {
-    return bs(nums, target, mid_index + 1, end_index)
-  }
-}
-
-```
-
-动态规划：
-
-1. 状态
-2. 状态转移方程
 
 
 
