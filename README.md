@@ -71,10 +71,10 @@ a ^ b ^ a = a
 
 | #                       | 题目                 | 语言 | 难度   | 注释                      |
 | ----------------------- | -------------------- | ---- | ------ | ------------------------- |
+| 402                     | 移掉K位数字          | js   | Medium | 贪心 + 单调栈             |
 | 122（区别121, n+1限制） | 买卖股票的最佳时机II | js   | Easy   | 贪心                      |
 | 455                     | 分发饼干             | js   | Easy   | Easy                      |
 | 860                     | 柠檬水找零           | js   | Easy   | Easy                      |
-| 402                     | 移掉K位数字          | js   | Medium | 贪心 + 单调栈             |
 | 剪枝Offer14-I           | 剪绳子               | js   | Medium | 贪心（尽可能分为长度为3） |
 | 剪枝Offer14-II          | 剪绳子II             | js   | Medium | 贪心（尽可能分为长度为3） |
 
@@ -136,7 +136,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | #                    | 题目   | 语言 | 难度   | 注释            |
 | -------------------- | ------ | ---- | ------ | --------------- |
 | 264                  | 丑数II | js   | Medium | 动态规划+三指针 |
-| 剑指Offer49（同264） | 丑数   | js   | Medium | -               |
+| 剑指Offer49（同264） | 丑数   | js   | Medium | 动态规划+三指针 |
 
 ##### 二维动态规划
 
@@ -189,6 +189,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
+|136|只出现一次的数字|js|Easy|Sort|
 |75|颜色分类|py2|Medium|冒泡排序|
 |179|最大数|py, js|Medium|冒泡排序、sort|
 |177| 第N高的薪水|sql|Medium|DESC LIMIT|
@@ -207,10 +208,6 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 ### 双指针（快慢指针、左右指针）
 
-| #    | 题目             | 语言 | 难度 | 注释   |
-| ---- | ---------------- | ---- | ---- | ------ |
-| 350  | 两个数组的交集II | js   | Easy | 双指针 |
-
 #### 快慢指针
 
 - 判断链表中是否含有环
@@ -227,6 +224,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 | #    | 题目                           | 语言  | 难度 | 注释                 |
 | ---- | ------------------------------ | ------- | ------ | -------------------- |
+| 350 | 两个数组的交集II | js | Easy | 双指针 |
 | 88   | 合并两个有序数组               | js/py2  | Easy   | 左右指针             |
 | 977  | 有序数组的平方                 | py, js | Easy   | 左右指针             |
 | m21  | 调整数组顺序使奇数位于偶数前面 | js      | Easy   | 左右指针             |
@@ -250,6 +248,12 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 ### 哈希算法（3）
 
+| #    | 题目 | 语言 | 难度 | 注释 |
+| ---- | ---- | ---- | ---- | ---- |
+|      |      |      |      |      |
+
+
+
 ## 数据结构
 
 #### 数组（8）
@@ -257,7 +261,6 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | #          | 题目                     | 语言   | 难度   | 注释         |
 | ---------- | ------------------------ | ------ | ------ | ------------ |
 | 217        | 存在重复元素             | js     | Easy   | -            |
-| 136        | 只出现一次的数字         | js     | Easy   | -            |
 | 26         | 删除排序数组中的重复相   | js     | Easy   | -            |
 | 27（同26） | 移除元素                 | js     | Easy   | -            |
 | 80（同26） | 删除排序数组中的重复项II | js     | Medium | -            |
@@ -295,9 +298,11 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 #### 哈希/散列表（8）
 
-| #    | 题目       | 语言 | 难度   | 注释           |
-| ---- | ---------- | ---- | ------ | -------------- |
-| 36   | 有效的数独 | js   | Medium | 哈希表存放状态 |
+| #           | 题目                         | 语言 | 难度   | 注释            |
+| ----------- | ---------------------------- | ---- | ------ | --------------- |
+| 36          | 有效的数独                   | js   | Medium | 哈希表存放状态  |
+| 剑指Offer48 | 最长不包含重复字符放入字符串 | js   | Medium | 滑动窗口+哈希表 |
+| 剑指Offer50 | 第一只出现一次的字符         | js   | Easy   | 哈希表          |
 
 #### 堆（8）
 
@@ -328,8 +333,8 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 | #                     | 题目                     | 语言   | 难度   | 注释                               |
 | --------------------- | ------------------------ | ------ | ------ | ---------------------------------- |
-| 160                   | 相交链表                 | js, ts | Easy   | 双指针+递归                        |
-| 剑指Offer52（同160）  | 两个链表的第一个公共节点 | js     | Easy   | 双指针+递归                        |
+| 160                   | 相交链表                 | js, ts | Easy   | 双指针跑两趟                       |
+| 剑指Offer52（同160）  | 两个链表的第一个公共节点 | js     | Easy   | 双指针跑两趟                       |
 | 141                   | 环形链表                 | js     | Easy   | 快慢指针                           |
 | 203                   | 移除链表元素             | js     | Easy   | 快慢指针+哨兵节点                  |
 | 剑指offer18（同203）  | 删除链表的节点（元素）   | js     | Easy   | 快慢指针+哨兵节点                  |
