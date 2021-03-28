@@ -235,6 +235,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 424  | 替换后的最长重复字符           | ?       | Medium | 滑动窗口             |
 | 1004 | 最大连续1的个数III             | js      | Medium | 滑动窗口             |
 | 76   | 最小覆盖子串                   | ?       | Hard   | 滑动窗口             |
+| 42 | 接雨水 | js | Hard | 左右指针+左右最大值辅助 |
 
 ### 字符串匹配
 
@@ -290,9 +291,10 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 #### 栈（8）
 
-| #    | 题目       | 语言 | 难度 | 注释 |
-| ---- | ---------- | ---- | ---- | ---- |
-| 20   | 有效的括号 | js   | Easy | 栈   |
+| #    | 题目               | 语言 | 难度 | 注释 |
+| ---- | ------------------ | ---- | ---- | ---- |
+| 20   | 有效的括号         | js   | Easy | 栈   |
+| 84   | 柱状图中最大的矩形 | js   | Hard | 栈   |
 
 #### 队列（8）
 
@@ -463,6 +465,10 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 |#|题目|语言|难度|注释|
 |:-|:-:|:-:|:-:|:-:|
+|剑指Offer66|构建乘积数组|js|Medium|两趟遍历|
+|50|幂函数 Pow(x, n)|js|Medium|折半累乘|
+|剑指Offer16（同50）|数值的整数次方|js|Medium|折半累乘|
+|剑指Offer57-II|和为s的连续正数序列|js|Easy|求和公式|
 |412|Fizz Buzz|py,  js, ts|Easy|Array.from|
 |204|计数质数|js|Easy|-|
 |326|3的幂|js|Easy|-|
@@ -476,7 +482,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 |模拟加法|addString|js||已测试|
 |166|分数到小数（模拟除法）||||
 |43|字符串相乘\模拟乘法\大数相乘|js|Medium|分治未实现？|
-|m57_2|和为s的连续正数序列|js|a|连续数字求和公式|
+|m57_2|和为s的连续正数序列|js||连续数字求和公式|
 |（经典）|线段是否相交|||isIntersect， 向量（几何）|
 |面试题 16.03. 交点| 交点 |js|Hard|intersection|
 
@@ -490,19 +496,13 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 #### 位运算
 
-| #                    | 题目            | 语言 | 难度 | 注释                       |
-| -------------------- | --------------- | ---- | ---- | -------------------------- |
-| 190                  | 颠倒二进制位    | js   | Easy | 获取末位+移位+无符号移位   |
-| 191（汉明重量）      | 位1的个数       | js   | Easy | 移位/按位与                |
-| 剑指Offer15（同191） | 二进制中1的个数 | js   | Easy |                            |
-| 461（汉明距离）      | 汉明距离        | js   | Easy | 按位异或+布赖恩-克尼根算法 |
-
-#### 数学运算
-
-| #                   | 题目             | 语言 | 难度   | 注释 |
-| ------------------- | ---------------- | ---- | ------ | ---- |
-| 50                  | 幂函数 Pow(x, n) | js   | Medium |      |
-| 剑指Offer16（同50） | 数值的整数次方   | js   | Medium |      |
+| #                    | 题目                                          | 语言 | 难度   | 注释                       |
+| -------------------- | --------------------------------------------- | ---- | ------ | -------------------------- |
+| 剑指Offer64          | 求1+2+...+n（限制不使用乘除法、条件判断语句） | js   | Medium | n && (n += sumNums(n-1))   |
+| 190                  | 颠倒二进制位                                  | js   | Easy   | 获取末位+移位+无符号移位   |
+| 191（汉明重量）      | 位1的个数                                     | js   | Easy   | 移位/按位与                |
+| 剑指Offer15（同191） | 二进制中1的个数                               | js   | Easy   |                            |
+| 461（汉明距离）      | 汉明距离                                      | js   | Easy   | 按位异或+布赖恩-克尼根算法 |
 
 #### 统计
 
