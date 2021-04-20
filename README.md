@@ -272,6 +272,12 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 189        | 旋转数组                 | js, ts | Easy   | -            |
 | 48         | 旋转图像                 | js     | Medium | 旋转二维数组 |
 
+#### 集合
+
+| #           | 题目           | 语言 | 难度 | 注释 |
+| ----------- | -------------- | ---- | ---- | ---- |
+| 剑指Offer61 | 扑克牌中的顺子 | js   | Easy | 集合 |
+
 #### 字符串
 
 | #           | 题目                     | 语言       | 难度   | 注释                                               |
@@ -305,7 +311,6 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 36          | 有效的数独                   | js   | Medium | 哈希表存放状态  |
 | 剑指Offer48 | 最长不包含重复字符放入字符串 | js   | Medium | 滑动窗口+哈希表 |
 | 剑指Offer50 | 第一只出现一次的字符         | js   | Easy   | 哈希表          |
-| 剑指Offer61 | 扑克牌中的顺子               | js   | Easy   | 哈希表          |
 
 #### 堆（8）
 
