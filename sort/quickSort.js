@@ -1,32 +1,35 @@
-
-function quickSort(arr) {
-    partition(arr, 0, arr.length - 1)
-    return arr;
+function quickSort(arr, start, end) {
+    if (start >= end) return;
+    let pivotIndex = partition(arr, start, arr.length - 1);
+    quickSort(arr, start, pivotIndex-1);
+    quickSort(arr, pivotIndex+1, arr.length - 1);
 }
 
 function partition(arr, start, end) {
-    if (start >= end) return;
     var pivot = arr[start];
-    var i = start
-    var j = end;
-    while (i < j) {
-        while (i < j && arr[j] >= pivot) j--;
-        if (i<j) {
-            arr[i] = arr[j];
-            i++;
+    let left = start, right = end;
+    while (left < right) {
+        while (left < right && arr[right] >= pivot) right--;
+        if (left < right) {
+            arr[left] = arr[right];
+            left++;
         }
-        while (i < j && arr[i] < pivot) i++;
-        if (i<j) {
-            arr[j] = arr[i];
-            j--;
+        while (left < right && arr[left] < pivot) left++;
+        if (left < right) {
+            arr[right] = arr[left];
+            right--;
         }
     }
-    arr[i] = pivot;
-    // console.log(start, end,i, pivot, arr)
-    partition(arr, start, i - 1);
-    partition(arr, i + 1, end);
+    arr[left] = pivot;
+    return left;
 }
 
 var testArr = [61, 17, 29, 22, 34, 60, 72, 21, 50, 1, 62];
 quickSort(testArr, 0, testArr.length - 1)
-console.log(quickSort(testArr));
+console.log(testArr);
+
+// [
+//     1, 17, 21, 22, 29,
+//    34, 50, 60, 61, 62,
+//    72
+//  ]
