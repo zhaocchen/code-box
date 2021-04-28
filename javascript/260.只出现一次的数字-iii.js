@@ -11,19 +11,19 @@
  */
 var singleNumber = function(nums) {
     let xor = 0;
-    for(let i of nums) {
-        xor ^= i;
+    for(let num of nums) {
+        xor ^= num;
     }
     let divide = 1;
     while((divide & xor) == 0) {
         divide <<= 1;
     }
     let res1 = 0, res2 = 0;
-    for (let i of nums) {
-        if (divide & i) {
-            res1 ^= i;
+    for (let num of nums) {
+        if (divide & num) {
+            res1 ^= num;
         } else {
-            res2 ^= i;
+            res2 ^= num;
         }
     }
     return [res1, res2];
