@@ -9,12 +9,12 @@ function partition(arr, start, end) {
     var pivot = arr[start];
     let left = start, right = end;
     while (left < right) {
-        while (left < right && arr[right] >= pivot) right--;
+        while (left < right && arr[right] > pivot) right--;
         if (left < right) {
             arr[left] = arr[right];
             left++;
         }
-        while (left < right && arr[left] < pivot) left++;
+        while (left < right && arr[left] <= pivot) left++;
         if (left < right) {
             arr[right] = arr[left];
             right--;
