@@ -1,4 +1,4 @@
-
+// 实现负索引数组
 function findIndexOfNums (nums, target) {
     const map = new Map()
     for (let i = 0; i < nums.length; i++) {
