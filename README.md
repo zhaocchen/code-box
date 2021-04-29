@@ -115,6 +115,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 509                    |     斐波那契数(数列)     | py, js |  Easy  |          dp[i] = i < 2 ? i : dp[i - 1] + dp[i - 2]           |
 | 1137（147周赛）        |    第 N 个泰波那契数     | py, js |  Easy  |          dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]           |
 | 70（经典）             |          爬楼梯          | py, js |  Easy  |                  dp[i] = dp[i-1] + dp[i -2]                  |
+| 剑指Offer46            |     把数字译成字符串     |   js   | Medium |                 dp[i] = dp[i-1] {+dp[i -2]}                  |
 | 53（经典）             |       最大子序列和       | py, js |  Easy  |          dp[i] = Math.max(dp[i-1]+nums[i], nums[i])          |
 | 剑指Offer42（同53）    |    连续子数组的最大和    |   js   |  Easy  |                              -                               |
 | 121                    |    买卖股票的最佳时机    |   js   |  Easy  |       dp[i] = Math.max(dp[i-1], prices[i] - minPrice)        |
@@ -519,6 +520,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 137                  | 只出现一次的数字 II                           | js   | Medium | 同或                       |
 | 260                  | 只出现一次的数字 III                          | js   | Medium | 异或                       |
 | 剑指offer56-I(同260) | 数组中数字出现的次数                          | js   | Medium | 异或                       |
+| 剑指offer56-II       | 数组中数字出现的次数II                        | js   | Medium | 与+移位                    |
 | 645                  | 错误集合                                      | js   | Easy   | 异或                       |
 | --                   | --                                            | -    | -      | -                          |
 | 191（汉明重量）      | 位1的个数                                     | js   | Easy   | 移位/按位与                |
