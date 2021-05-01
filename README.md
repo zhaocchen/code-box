@@ -351,6 +351,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 19                    | 删除链表的倒数第N个节点  | js     | Medium | 距离为k的双指针（注意： 哨兵节点） |
 | 剑指offer22（易于19） | 链表中倒数第k个节点      | js     | Easy   | Done: 距离为k的双指针              |
 | 面试题02.02（易于19） | 返回倒数第k个节点        | js     | Easy   | Done: 距离为k的双指针              |
+| 面试02.01             | 移除重复节点             | js     | Easy   | 快慢指针                           |
 
 
 
