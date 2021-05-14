@@ -271,7 +271,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 1864       | 人口最多的年份           | js   | Easy   | 差分数组 |
 | 1094       | 拼车                     | js   | Medium | 差分数组 |
 | 1109       | 航班预订统计             | js   | Medium | 差分数组 |
-| 1310       | 子数组异或查询           | js   | Medium | 差分数组 |
+| 1310       | 子数组异或查询-          | js   | Medium | 差分数组 |
 
 #### 矩阵（二维数组）
 
