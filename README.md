@@ -326,6 +326,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 剑指Offer50 | 第一只出现一次的字符         | js   | Easy   | 哈希表          |
 | 面试题01.02 | 判定是否互为字符重排-哈希表  | js   | Easy   | 哈希表          |
 | 36          | 有效的数独                   | js   | Medium | 哈希表存放状态  |
+| 1640        | 能否连接形成数组             | js   | Easy   | 哈希表          |
 
 36  有效的数独  js  Medium  哈希表存放状态堆（8）
 
