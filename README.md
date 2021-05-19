@@ -333,6 +333,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 面试题01.02 | 判定是否互为字符重排-哈希表  | js   | Easy   | 哈希表          |
 | 36          | 有效的数独                   | js   | Medium | 哈希表存放状态  |
 | 187         | 重复的DNA序列                | js   | Medium | Set             |
+| 970         | 强整数                       | js   | Medium | 暴力法+哈希表   |
 | 1640        | 能否连接形成数组             | js   | Easy   | 哈希表          |
 
 ### 链表（9）
