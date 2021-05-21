@@ -464,6 +464,14 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 |1186| 删除一次得到子数组最大和 ||Medium||
 |1187| 使数组严格递增 ||Hard||
 
+### 字典树
+
+| #    | 题目     | 语言 | 难度   | 注释   |
+| ---- | -------- | ---- | ------ | ------ |
+| 208  | 实现Trie | js   | Medium | 字典树 |
+
+
+
 ### 图（8）
 
 ### 跳表（6）
