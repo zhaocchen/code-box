@@ -294,7 +294,8 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 | #           | 题目           | 语言 | 难度 | 注释 |
 | ----------- | -------------- | ---- | ---- | ---- |
-| 剑指Offer61 | 扑克牌中的顺子 | js   | Easy | 集合 |
+| 剑指Offer61 | 扑克牌中的顺子 | js   | Easy | Set  |
+| 349         | 两个数组的交集 | js   | Easy | Set  |
 
 #### 字符串
 
