@@ -395,7 +395,8 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 226 | 翻转二叉树 | py, js | Easy | 递归 |
 | 112 | 路径总和 | js | Easy | 递归 |
 | 114 | 二叉树展开为链表 | js | Medium | 递归 |
-| 102 | 二叉树的层序遍历 | js | Medium | 遍历 |
+| 102 | 二叉树的层序遍历 | js | Medium | 层序遍历 |
+| 637 | 二叉树的层平均值 | js | Easy | 层序遍历 |
 | 654 | 最大二叉树 | js | Medium | 生成树 |
 | 105 | 从前序与中序遍历序列构造二叉树 | js | Medium | 生成树 |
 | 106 | 从中序与后序遍历序列构造二叉树 | js | Medium | 生成树 |
