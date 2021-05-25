@@ -46,7 +46,6 @@
 |165（经典）| 比较版本号<br />前端通用的版本比较 | js | Medium | -- |
 |1859| 将句子排序 | js | Easy | String.prototype.slice() |
 |1860| 增长的内存泄露 | js | Medium | - |
-|1864（5760weekly241-B）| 构成交替字符串需要的最小交换次数 | js | Medium | 枚举 |
 
 ### 位运算
 
@@ -292,10 +291,12 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 
 #### 集合
 
-| #           | 题目           | 语言 | 难度 | 注释 |
-| ----------- | -------------- | ---- | ---- | ---- |
-| 剑指Offer61 | 扑克牌中的顺子 | js   | Easy | Set  |
-| 349         | 两个数组的交集 | js   | Easy | Set  |
+| #           | 题目           | 语言 | 难度   | 注释 |
+| ----------- | -------------- | ---- | ------ | ---- |
+| 剑指Offer61 | 扑克牌中的顺子 | js   | Easy   | Set  |
+| 187         | 重复的DNA序列  | js   | Medium | Set  |
+| 349         | 两个数组的交集 | js   | Easy   | Set  |
+| 961         | 重复N次的元素  | js   | Easy   | Set  |
 
 #### 字符串
 
@@ -333,7 +334,7 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 剑指Offer50 | 第一只出现一次的字符         | js   | Easy   | 哈希表          |
 | 面试题01.02 | 判定是否互为字符重排-哈希表  | js   | Easy   | 哈希表          |
 | 36          | 有效的数独                   | js   | Medium | 哈希表存放状态  |
-| 187         | 重复的DNA序列                | js   | Medium | Set             |
+| 350         | 两个数组的交集II             | js   | Easy   | 哈希表          |
 | 970         | 强整数                       | js   | Medium | 暴力法+哈希表   |
 | 1640        | 能否连接形成数组             | js   | Easy   | 哈希表          |
 
@@ -393,6 +394,9 @@ https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 | 100 | 相同的树 | js | Easy | 递归 |
 | 101 | 对称二叉树 | js | Easy | 递归 |
 | 剑指Offer28（同101） | 对称二叉树 | js | Easy | 递归 |
+| 110 | 平衡二叉树 | js | Easy | 递归 |
+| 剑指Offer55-II(同110) | 平衡二叉树 | js | Easy | - |
+| 111 | 二叉树的最小深度 | js | Easy | 递归 |
 | 226 | 翻转二叉树 | py, js | Easy | 递归 |
 | 112 | 路径总和 | js | Easy | 递归 |
 | 114 | 二叉树展开为链表 | js | Medium | 递归 |
